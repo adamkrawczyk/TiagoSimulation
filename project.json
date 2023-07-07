@@ -1,0 +1,29 @@
+{
+    "project_name": "TiagoSimulation",
+    "project_id": "{EF11EBD6-BC2C-4DA4-9055-FE06B6B07D8F}",
+    "origin": "Open 3D Engine Extras: TiagoSimulation",
+    "license": "https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate/Template/LICENSE.txt",
+    "display_name": "TiagoSimulation",
+    "summary": "Template for ROS2 projects.",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "TiagoSimulation",
+        "ROS2",
+        "ROS"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": [
+        "/home/adam/o3de_ws/TiagoRobot",
+        "Gem"
+    ],
+    "restricted": "TiagoSimulation",
+    "gem_names": [
+        "ROS2",
+        "WarehouseSample",
+        "RosRobotSample"
+    ],
+    "engine_version": "2.1.0"
+}
