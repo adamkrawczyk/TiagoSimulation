@@ -789,7 +789,7 @@
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/1",
-                    "value": -1.5272716424874486e-9
+                    "value": -1.5272716424874484e-9
                 },
                 {
                     "op": "replace",
@@ -814,32 +814,32 @@
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/0",
-                    "value": -4.454279899597168
+                    "value": 0.697838544845581
                 },
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": 3.190028190612793
+                    "value": 4.816952705383301
                 },
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/2",
-                    "value": -0.8881452083587646
+                    "value": 1.787206768989563
                 },
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/0",
-                    "value": -5.392009258270264
+                    "value": 10.317255020141602
                 },
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/1",
-                    "value": -7.475125312805176
+                    "value": -1.618259072303772
                 },
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/2",
-                    "value": -125.96166229248047
+                    "value": 171.18197631835938
                 }
             ]
         },
