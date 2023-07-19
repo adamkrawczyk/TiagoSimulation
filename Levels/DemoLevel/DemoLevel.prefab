@@ -27,7 +27,7 @@
                     "Entity_[541237100205]",
                     "Instance_[650636534085]/ContainerEntity",
                     "Entity_[1176639161715]",
-                    "Instance_[29141886718333]/ContainerEntity"
+                    "Instance_[7430287434645]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -604,245 +604,6 @@
         }
     },
     "Instances": {
-        "Instance_[29141886718333]": {
-            "Source": "Assets/Importer/tiago-no-arm.prefab",
-            "Patches": [
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1004231773394]/Components/EditorPendingCompositionComponent/PendingComponents",
-                    "value": {
-                        "EditorFixedJointComponent": {
-                            "$type": "EditorFixedJointComponent",
-                            "Id": 9531254446026249223,
-                            "Configuration": {
-                                "Local Position": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Local Rotation": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Fix Joint Location": false,
-                                "Parent Entity": "",
-                                "Child Entity": "",
-                                "Breakable": false,
-                                "Maximum Force": 1.0,
-                                "Maximum Torque": 1.0,
-                                "Display Debug": 1,
-                                "Select Lead on Snap": true,
-                                "Self Collide": false
-                            },
-                            "Component Mode": {}
-                        }
-                    }
-                },
-                {
-                    "op": "remove",
-                    "path": "/Entities/Entity_[1004231773394]/Components/EditorFixedJointComponent"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[853907918034]/Components/EditorPendingCompositionComponent/PendingComponents",
-                    "value": {
-                        "EditorFixedJointComponent": {
-                            "$type": "EditorFixedJointComponent",
-                            "Id": 15259058233585127894,
-                            "Configuration": {
-                                "Local Position": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Local Rotation": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Fix Joint Location": false,
-                                "Parent Entity": "",
-                                "Child Entity": "",
-                                "Breakable": false,
-                                "Maximum Force": 1.0,
-                                "Maximum Torque": 1.0,
-                                "Display Debug": 1,
-                                "Select Lead on Snap": true,
-                                "Self Collide": false
-                            },
-                            "Component Mode": {}
-                        }
-                    }
-                },
-                {
-                    "op": "remove",
-                    "path": "/Entities/Entity_[853907918034]/Components/EditorFixedJointComponent"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1017116675282]/Components/EditorPendingCompositionComponent/PendingComponents",
-                    "value": {
-                        "EditorFixedJointComponent": {
-                            "$type": "EditorFixedJointComponent",
-                            "Id": 3537955930269226780,
-                            "Configuration": {
-                                "Local Position": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Local Rotation": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Fix Joint Location": false,
-                                "Parent Entity": "",
-                                "Child Entity": "",
-                                "Breakable": false,
-                                "Maximum Force": 1.0,
-                                "Maximum Torque": 1.0,
-                                "Display Debug": 1,
-                                "Select Lead on Snap": true,
-                                "Self Collide": false
-                            },
-                            "Component Mode": {}
-                        }
-                    }
-                },
-                {
-                    "op": "remove",
-                    "path": "/Entities/Entity_[1017116675282]/Components/EditorFixedJointComponent"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[866792819922]/Components/EditorPendingCompositionComponent/PendingComponents",
-                    "value": {
-                        "EditorFixedJointComponent": {
-                            "$type": "EditorFixedJointComponent",
-                            "Id": 16498333859526769845,
-                            "Configuration": {
-                                "Local Position": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Local Rotation": [
-                                    0.0,
-                                    0.0,
-                                    0.0
-                                ],
-                                "Fix Joint Location": false,
-                                "Parent Entity": "",
-                                "Child Entity": "",
-                                "Breakable": false,
-                                "Maximum Force": 1.0,
-                                "Maximum Torque": 1.0,
-                                "Display Debug": 1,
-                                "Select Lead on Snap": true,
-                                "Self Collide": false
-                            },
-                            "Component Mode": {}
-                        }
-                    }
-                },
-                {
-                    "op": "remove",
-                    "path": "/Entities/Entity_[866792819922]/Components/EditorFixedJointComponent"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
-                    "value": 0.8639259338378906
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": -14.211527824401855
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
-                    "value": 0.0450286865234375
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Configuration/CookedData",
-                    "value": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAABDvxw95zW9PQrXIzzD0JA9w9CQPQrXIzzD0JA9w9CQPQrXI7xDvxw95zW9PQrXI7zyMJaxzczMPQrXI7zyMJaxzczMPQrXIzxBvxy95zW9vQrXI7xrSWEyzczMvQrXI7xrSWEyzczMvQrXIzxBvxy95zW9vQrXIzzC0JC9w9CQvQrXIzzC0JC9w9CQvQrXI7znNb09QL8cvQrXIzzE0JA9wdCQvQrXIzzE0JA9wdCQvQrXI7znNb09QL8cvQrXI7zNzMw9AAAAAArXI7zNzMw9AAAAAArXIzxIvxw95TW9vQrXIzxIvxw95TW9vQrXI7znNb29Q78cPQrXIzzD0JC9wtCQPQrXIzzD0JC9wtCQPQrXI7znNb29Q78cPQrXI7zNzMy98jAWsgrXI7zNzMy98jAWsgrXIzzlNb29R78cvQrXI7zlNb29R78cvQrXIzxHvxy95TW9PQrXI7zlNb09Rb8cPQrXI7xHvxy95TW9PQrXIzzlNb09Rb8cPQrXIzwAAAAAAAAAAAAAgL8K1yO8AAAQANs5Dj8w21Q/AAAAAGbdyL0QAAQGr8VHPsAUez8AAAAAZt3IvRQABAauxUe+vxR7vwAAAABl3ci9GAAEANs5Dr8w21S/AAAAAGbdyL0cAAQAMdtUP9o5Dr8AAAAAZt3IvSAABBTAFHs/tMVHvgAAAABm3ci9JAAEFMfFRz6+FHu/AAAAAGbdyL0oAAQE3jkOPy/bVL8AAAAAZt3IvSwABBUw21S/3jkOPwAAAABo3ci9MAAEDb8Ue7+uxUc+AAAAAGXdyL00AAQMMNtUv9w5Dr8AAAAAZt3IvTgABAG+FHu/xsVHvgAAAABm3ci9PAAEEMPFR769FHs/AAAAAGTdyL1AAAQH3DkOvzDbVD8AAAAAZt3IvUQABBK+FHs/xsVHPgAAAABl3ci9SAAEGDHbVD/YOQ4/AAAAAGTdyL1MAAQaAAAAAAAAAAAAAIA/CtcjvFAAEAIaGBcWHAQDAh0QDw4TBwYLAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREggHExITDg0UFRYXFBcYGRoLChsaGxkYHgUEHB4cFhUfERAdHx0CAR8BAAUeFRQZGwoJCBINDBEADAAKAAkADgANAAIAAQAQAA8ABgAFAAgABwADAAQACwERARABAgINAhEDBwMRAwQEEQQLBREFCAUGBg8GEQcRBwgIEQkRCQ4JCgoMChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBEBEAARAAAQIAAg0CDREAAwQAAwcDBxEDBBEECxEABAsFBhEFCBEABQgABQYABg8GDxEHCBEABwgJChEJDhEACQ4ACQoACgwKDBEACwwLDBEADQ4ADxANDhEPEBEAAAAAzczMvc3MzL0K1yO8zczMPc3MzD0K1yM8UoIgOlv6yjUgK7SoNmLxpiArtKhb+so1Idt5GjZi8aYh23kaFT1INtGZ4TCG9QgwkmYfLwAAgL8K1yM8sXLKPc8vvTvPL707"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Radius",
-                    "value": 0.10000000149011612
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/0",
-                    "value": -3.289596151034857e-9
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/1",
-                    "value": -1.5272716424874484e-9
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/2",
-                    "value": -1.1794613896665138e-10
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/0",
-                    "value": 0.7165235280990601
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/4",
-                    "value": 0.7165235280990601
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/8",
-                    "value": 1.4328471422195437
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/0",
-                    "value": 0.697838544845581
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": 4.816952705383301
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/2",
-                    "value": 1.787206768989563
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/0",
-                    "value": 10.317255020141602
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/1",
-                    "value": -1.618259072303772
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/2",
-                    "value": 171.18197631835938
-                }
-            ]
-        },
         "Instance_[650636534085]": {
             "Source": "O3DEScene/Prefabs/Warehouse.prefab",
             "Patches": [
@@ -1150,6 +911,420 @@
                     "op": "replace",
                     "path": "/Entities/Entity_[729070309458]/Components/Component_[9485936813148123686]/ColliderConfiguration/MaterialSlots/Slots/24/MaterialAsset/assetHint",
                     "value": ""
+                }
+            ]
+        },
+        "Instance_[7430287434645]": {
+            "Source": "Assets/Importer/tiago-no-arm.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/0",
+                    "value": 1.8562693604451397e-9
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/1",
+                    "value": 1.2052853159971733e-9
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/2",
+                    "value": 5.488404869469221e-12
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/0",
+                    "value": 0.006750398315489292
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/4",
+                    "value": 0.006750398315489292
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[991346871506]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/8",
+                    "value": 0.01345079205930233
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[832433081554]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Configuration/CookedData",
+                    "value": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1004231773394]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 9531254446026249223,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1004231773394]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[944102231250]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Configuration/CookedData",
+                    "value": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[853907918034]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 15259058233585127894,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[853907918034]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[866792819922]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 16498333859526769845,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[866792819922]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[845317983442]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Configuration/CookedData",
+                    "value": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1017116675282]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 3537955930269226780,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1017116675282]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[871087787218]/Components/EditorColliderComponent/ShapeConfiguration/Cylinder/Configuration/CookedData",
+                    "value": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/0",
+                    "value": 1.8562693604451397e-9
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/1",
+                    "value": 1.2052853159971733e-9
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Centre of mass offset/2",
+                    "value": 5.488404869469221e-12
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/0",
+                    "value": 0.00450026523321867
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/4",
+                    "value": 0.00450026523321867
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[965577067730]/Components/EditorRigidBodyComponent/Configuration/Inertia tensor/8",
+                    "value": 0.008967195637524128
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[901152558290]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[810958245074]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[952692165842]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[1146574390643]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.1250829696655273
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": -13.078207969665527
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": 0.3648301362991333
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/0",
+                    "value": 90.20016479492188
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/1",
+                    "value": 0.000003415094397496432
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 85.13482666015625
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1051476413650]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[819548179666]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[978461969618]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[909742492882]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 2.3972959518432617
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": -1.9233570098876953
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": 1.9584789276123047
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/0",
+                    "value": -115.02275848388672
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/1",
+                    "value": 41.755218505859375
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[9057262362451]/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 87.29052734375
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[789483408594]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[914037460178]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1034296544466]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[802368310482]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[883972689106]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[961282100434]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[793778375890]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[858202885330]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[935512296658]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1038591511762]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[905447525586]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[815253212370]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[828138114258]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[974167002322]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[862497852626]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1042886479058]/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -0.17000000178813934
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[922627394770]/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -0.17000000178813934
                 }
             ]
         }
