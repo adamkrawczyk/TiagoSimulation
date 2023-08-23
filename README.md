@@ -57,3 +57,5 @@ cmake --build build/linux --config profile --target TiagoSimulation Editor Tiago
 Run simulation (click on play button in the top menu bar or press ctrl+g).
 
 The topics should be visible in the terminal where you run the simulation (`ros2 topic list`).
+
+To run teleop controll: `ros2 run teleop_twist_keyboard teleop_twist_keyboard --remap /cmd_vel:=/base_footprint/cmd_vel`
