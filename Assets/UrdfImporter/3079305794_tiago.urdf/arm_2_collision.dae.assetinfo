@@ -1,0 +1,26 @@
+{
+    "values": [
+        {
+            "$type": "{5B03C8E6-8CEE-4DA0-A7FA-CD88689DD45B} MeshGroup",
+            "id": "{9B1E68D3-6F56-44E7-AB79-FDAB6DAF28FA}",
+            "name": "arm_2_collision",
+            "NodeSelectionList": {
+                "selectedNodes": [
+                    "VisualSceneNode",
+                    "VisualSceneNode.node",
+                    "VisualSceneNode.node.DefaultMaterial",
+                    "VisualSceneNode.node.transform"
+                ]
+            },
+            "export method": 1,
+            "DecomposeMeshes": true,
+            "PhysicsMaterialSlots": {
+                "Slots": [
+                    {
+                        "Name": "DefaultMaterial"
+                    }
+                ]
+            }
+        }
+    ]
+}
