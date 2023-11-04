@@ -6331,7 +6331,30 @@
             "Components": {
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 16155445358104917010
+                    "Id": 16155445358104917010,
+                    "DisabledComponents": {
+                        "ROS2Lidar2DSensorComponent": {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 1771522087693299132,
+                            "m_template": {
+                                "$type": "ROS2Lidar2DSensorComponent",
+                                "SensorConfiguration": {
+                                    "Frequency (HZ)": 30.0,
+                                    "Publishers": {
+                                        "sensor_msgs::msg::LaserScan": {
+                                            "Type": "sensor_msgs::msg::LaserScan",
+                                            "Topic": "scan"
+                                        }
+                                    }
+                                },
+                                "lidarCore": {
+                                    "lidarConfiguration": {
+                                        "lidarImplementation": "Scene Queries"
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "EditorEntityIconComponent": {
                     "$type": "EditorEntityIconComponent",
@@ -6411,17 +6434,34 @@
                         "Frame Name": "base_laser_link"
                     }
                 },
-                "ROS2Lidar2DSensorComponent": {
+                "ROS2LidarSensorComponent": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 1771522087693299132,
+                    "Id": 10550340084046626879,
                     "m_template": {
-                        "$type": "ROS2Lidar2DSensorComponent",
+                        "$type": "ROS2LidarSensorComponent",
                         "SensorConfiguration": {
-                            "Frequency (HZ)": 30.0,
+                            "Frequency (HZ)": 50.0,
                             "Publishers": {
-                                "sensor_msgs::msg::LaserScan": {
-                                    "Type": "sensor_msgs::msg::LaserScan",
-                                    "Topic": "scan"
+                                "sensor_msgs::msg::PointCloud2": {
+                                    "Type": "sensor_msgs::msg::PointCloud2",
+                                    "Topic": "pc"
+                                }
+                            }
+                        },
+                        "lidarCore": {
+                            "lidarConfiguration": {
+                                "lidarModelName": "Ouster OS2-64",
+                                "lidarImplementation": "RobotecGPULidar",
+                                "LidarParameters": {
+                                    "Name": "Ouster OS2-64",
+                                    "Layers": 64,
+                                    "Points per layer": 2048,
+                                    "Min vertical angle": 11.25,
+                                    "Max vertical angle": -11.25,
+                                    "Max range": 225.0,
+                                    "Noise Parameters": {
+                                        "Distance noise standard deviation base": 0.006000000052154064
+                                    }
                                 }
                             }
                         }

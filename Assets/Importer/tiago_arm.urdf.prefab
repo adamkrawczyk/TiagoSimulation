@@ -23,6 +23,80 @@
         }
     },
     "Entities": {
+        "Entity_[5524359802056]": {
+            "Id": "Entity_[5524359802056]",
+            "Name": "Camera",
+            "Components": {
+                "EditorCameraComponent": {
+                    "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                    "Id": 14729352937431435689
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 4799740604219337009
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 1645363669938358401
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 429317626208896192
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 16615229207556991499
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 13284326711384495086
+                },
+                "EditorLookAtComponent": {
+                    "$type": "EditorLookAtComponent",
+                    "Id": 11175501050584381150,
+                    "Target": "Entity_[5918274790819]",
+                    "ForwardAxis": 2
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 8402560921285841509
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12970202838313729040
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 6869218334913530171
+                },
+                "FlyCameraInputComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 11503111784059831048,
+                    "m_template": {
+                        "$type": "FlyCameraInputComponent",
+                        "Move Speed": 3.0,
+                        "Rotation Speed": 2.0
+                    }
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 2081074153159153160,
+                    "Parent Entity": "ContainerEntity",
+                    "Transform Data": {
+                        "Translate": [
+                            -2.308371067047119,
+                            1.2709665298461914,
+                            1.1162497997283936
+                        ],
+                        "Rotate": [
+                            11.547192573547363,
+                            19.979459762573242,
+                            -120.87740325927734
+                        ]
+                    }
+                }
+            }
+        },
         "Entity_[5918274790819]": {
             "Id": "Entity_[5918274790819]",
             "Name": "tiago",
@@ -37,7 +111,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2474821295219181482
+                    "Id": 2474821295219181482,
+                    "Child Entity Order": [
+                        "Entity_[6352066487715]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -80,7 +157,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 689650043762771178
+                    "Id": 689650043762771178,
+                    "Child Entity Order": [
+                        "Entity_[6171677861283]",
+                        "Entity_[6390721193379]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -183,7 +264,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 8191332836846585139
+                    "Id": 8191332836846585139,
+                    "Child Entity Order": [
+                        "Entity_[6433670866339]",
+                        "Entity_[5939749627299]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -307,7 +392,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 17575604843368857836
+                    "Id": 17575604843368857836,
+                    "Child Entity Order": [
+                        "Entity_[5935454660003]",
+                        "Entity_[5952634529187]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -448,7 +537,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -503,7 +592,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -527,7 +617,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -579,7 +670,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 751038034654376547
+                    "Id": 751038034654376547,
+                    "Child Entity Order": [
+                        "Entity_[6175972828579]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -672,7 +766,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2641110581164270611
+                    "Id": 2641110581164270611,
+                    "Child Entity Order": [
+                        "Entity_[5948339561891]",
+                        "Entity_[6412196029859]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -813,7 +911,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -868,7 +966,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -892,7 +991,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -967,7 +1067,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 17971664105357728502
+                    "Id": 17971664105357728502,
+                    "Child Entity Order": [
+                        "Entity_[5956929496483]",
+                        "Entity_[6047123809699]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -1073,7 +1177,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -1128,7 +1232,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1152,7 +1257,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1243,7 +1349,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15429021639350255055
+                    "Id": 15429021639350255055,
+                    "Child Entity Order": [
+                        "Entity_[5965519431075]",
+                        "Entity_[6403606095267]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -1354,7 +1464,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -1409,7 +1519,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1433,7 +1544,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1501,7 +1613,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 3737082328395336634
+                    "Id": 3737082328395336634,
+                    "Child Entity Order": [
+                        "Entity_[5974109365667]",
+                        "Entity_[6334886618531]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -1642,7 +1758,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -1697,7 +1813,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1721,7 +1838,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1773,7 +1891,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11833693876699217670
+                    "Id": 11833693876699217670,
+                    "Child Entity Order": [
+                        "Entity_[5982699300259]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -1914,7 +2035,7 @@
                                     "guid": "{1A750577-5177-5BC0-B955-37B55E7CF544}",
                                     "subId": 283461704
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_tip_collision.stl.azmodel"
                             }
                         }
                     }
@@ -1969,7 +2090,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -1993,7 +2115,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -2068,7 +2191,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2900901833151388460
+                    "Id": 2900901833151388460,
+                    "Child Entity Order": [
+                        "Entity_[5991289234851]",
+                        "Entity_[5931159692707]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -2179,7 +2306,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -2234,7 +2361,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -2258,7 +2386,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -2326,7 +2455,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9587225225034943581
+                    "Id": 9587225225034943581,
+                    "Child Entity Order": [
+                        "Entity_[5999879169443]",
+                        "Entity_[5922569758115]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -2472,7 +2605,7 @@
                                     "guid": "{63C7E35A-0BC4-5567-8F3E-005E118E7F48}",
                                     "subId": 268908328
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_2.stl.azmodel"
                             }
                         }
                     }
@@ -2529,7 +2662,6 @@
                                                 "guid": "{63C7E35A-0BC4-5567-8F3E-005E118E7F48}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_2_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -2556,7 +2688,6 @@
                                                 "guid": "{63C7E35A-0BC4-5567-8F3E-005E118E7F48}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_2_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -2609,7 +2740,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 10221807684176066554
+                    "Id": 10221807684176066554,
+                    "Child Entity Order": [
+                        "Entity_[6008469104035]",
+                        "Entity_[6326296683939]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -2756,7 +2891,7 @@
                                     "guid": "{8DE52D5E-4C3F-5222-B17E-F04DF05A5D6C}",
                                     "subId": 271301340
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_abd_collision.stl.azmodel"
                             }
                         }
                     }
@@ -2811,7 +2946,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -2835,7 +2971,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -2887,7 +3024,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15150403499861900380
+                    "Id": 15150403499861900380,
+                    "Child Entity Order": [
+                        "Entity_[6017059038627]",
+                        "Entity_[6558224917923]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -3028,7 +3169,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -3083,7 +3224,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -3107,7 +3249,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -3190,7 +3333,13 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 6571750559315964483
+                    "Id": 6571750559315964483,
+                    "Child Entity Order": [
+                        "Entity_[6386426226083]",
+                        "Entity_[6429375899043]",
+                        "Entity_[6463735637411]",
+                        "Entity_[6025648973219]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -3288,7 +3437,7 @@
                                     "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                     "subId": 276443623
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_cylinder_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -3345,7 +3494,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -3372,7 +3520,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -3464,7 +3611,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2632775942024671154
+                    "Id": 2632775942024671154,
+                    "Child Entity Order": [
+                        "Entity_[6034238907811]",
+                        "Entity_[6519570212259]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -3570,7 +3721,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -3625,7 +3776,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -3649,7 +3801,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -3717,7 +3870,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 6161068153805413345
+                    "Id": 6161068153805413345,
+                    "Child Entity Order": [
+                        "Entity_[6317706749347]",
+                        "Entity_[6042828842403]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -3829,7 +3986,7 @@
                                     "guid": "{AEB61353-BED5-51D1-8EB3-76759346E22B}",
                                     "subId": 282910942
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_5-wrist-2010.stl.azmodel"
                             }
                         }
                     }
@@ -3886,7 +4043,6 @@
                                                 "guid": "{AEB61353-BED5-51D1-8EB3-76759346E22B}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_5-wrist-2010_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -3913,7 +4069,6 @@
                                                 "guid": "{AEB61353-BED5-51D1-8EB3-76759346E22B}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_5-wrist-2010_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -3966,7 +4121,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2147702348864878638
+                    "Id": 2147702348864878638,
+                    "Child Entity Order": [
+                        "Entity_[6051418776995]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -4112,7 +4270,7 @@
                                     "guid": "{1A750577-5177-5BC0-B955-37B55E7CF544}",
                                     "subId": 283461704
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_tip_collision.stl.azmodel"
                             }
                         }
                     }
@@ -4167,7 +4325,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4191,7 +4350,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4243,7 +4403,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9486322479179865380
+                    "Id": 9486322479179865380,
+                    "Child Entity Order": [
+                        "Entity_[6060008711587]",
+                        "Entity_[6395016160675]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -4390,7 +4554,7 @@
                                     "guid": "{94E55299-AE3D-587A-B2D0-7D25B0C3F1FD}",
                                     "subId": 280287269
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_1.stl.azmodel"
                             }
                         }
                     }
@@ -4445,7 +4609,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4469,7 +4634,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4544,7 +4710,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11600680071950758773
+                    "Id": 11600680071950758773,
+                    "Child Entity Order": [
+                        "Entity_[6068598646179]",
+                        "Entity_[5969814398371]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -4650,7 +4820,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -4705,7 +4875,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4729,7 +4900,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -4816,7 +4988,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12781155452522733505
+                    "Id": 12781155452522733505,
+                    "Child Entity Order": [
+                        "Entity_[6077188580771]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -4911,7 +5086,7 @@
                                     "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                     "subId": 274434668
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_sphere_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -4968,7 +5143,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -4995,7 +5169,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -5051,7 +5224,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2831188164796361995
+                    "Id": 2831188164796361995,
+                    "Child Entity Order": [
+                        "Entity_[6085778515363]",
+                        "Entity_[6107253351843]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -5198,7 +5375,7 @@
                                     "guid": "{8DE52D5E-4C3F-5222-B17E-F04DF05A5D6C}",
                                     "subId": 271301340
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_abd_collision.stl.azmodel"
                             }
                         }
                     }
@@ -5253,7 +5430,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -5277,7 +5455,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -5329,7 +5508,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 10157146803676721913
+                    "Id": 10157146803676721913,
+                    "Child Entity Order": [
+                        "Entity_[6094368449955]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -5461,7 +5643,7 @@
                                     "guid": "{D61154B2-B6E6-52DF-BF32-0D06103FC751}",
                                     "subId": 282436276
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/sick_tim551.stl.azmodel"
                             }
                         }
                     }
@@ -5516,7 +5698,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -5540,7 +5723,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -5611,7 +5795,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11002702343073827107
+                    "Id": 11002702343073827107,
+                    "Child Entity Order": [
+                        "Entity_[6102958384547]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -5706,7 +5893,7 @@
                                     "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                     "subId": 274434668
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_sphere_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -5763,7 +5950,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -5790,7 +5976,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -5869,7 +6054,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 16168730285180746655
+                    "Id": 16168730285180746655,
+                    "Child Entity Order": [
+                        "Entity_[6111548319139]",
+                        "Entity_[5944044594595]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -5980,7 +6169,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -6035,7 +6224,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6059,7 +6249,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6237,7 +6428,7 @@
                                     "guid": "{DD3675D1-DD94-5D21-91A3-9C84FC6E85DE}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_1.stl.azmodel"
                             }
                         }
                     }
@@ -6292,7 +6483,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6316,7 +6508,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6368,7 +6561,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 10751215825231944619
+                    "Id": 10751215825231944619,
+                    "Child Entity Order": [
+                        "Entity_[6128728188323]",
+                        "Entity_[5961224463779]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -6515,7 +6712,7 @@
                                     "guid": "{8DE52D5E-4C3F-5222-B17E-F04DF05A5D6C}",
                                     "subId": 271301340
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_abd_collision.stl.azmodel"
                             }
                         }
                     }
@@ -6570,7 +6767,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6594,7 +6792,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6646,7 +6845,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 7201513878478990595
+                    "Id": 7201513878478990595,
+                    "Child Entity Order": [
+                        "Entity_[6137318122915]",
+                        "Entity_[6064303678883]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -6787,7 +6990,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -6842,7 +7045,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -6866,7 +7070,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -7048,7 +7253,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 3357190347994944031
+                    "Id": 3357190347994944031,
+                    "Child Entity Order": [
+                        "Entity_[6150203024803]",
+                        "Entity_[6038533875107]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -7195,7 +7404,7 @@
                                     "guid": "{2A2D4BA8-6294-5BE3-B455-9C93F59E137D}",
                                     "subId": 282995882
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_4.stl.azmodel"
                             }
                         }
                     }
@@ -7250,7 +7459,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -7274,7 +7484,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -7326,7 +7537,12 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9527446940061972659
+                    "Id": 9527446940061972659,
+                    "Child Entity Order": [
+                        "Entity_[6055713744291]",
+                        "Entity_[6528160146851]",
+                        "Entity_[6158792959395]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -7343,7 +7559,7 @@
                         "MaterialSlots": {
                             "Slots": [
                                 {
-                                    "Name": "Entire object"
+                                    "Name": "DefaultMaterial"
                                 }
                             ]
                         }
@@ -7378,7 +7594,7 @@
                         "MaterialSlots": {
                             "Slots": [
                                 {
-                                    "Name": "Entire object"
+                                    "Name": "DefaultMaterial"
                                 }
                             ]
                         }
@@ -7503,7 +7719,7 @@
                                     "guid": "{B62131E9-23CD-5686-BDAA-6B8F1FE64BFC}",
                                     "subId": 280244573
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_lift_with_arm.stl.azmodel"
                             }
                         }
                     }
@@ -7560,7 +7776,6 @@
                                                 "guid": "{B62131E9-23CD-5686-BDAA-6B8F1FE64BFC}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_lift_with_arm_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -7587,7 +7802,6 @@
                                                 "guid": "{B62131E9-23CD-5686-BDAA-6B8F1FE64BFC}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_lift_with_arm_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -7640,7 +7854,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2256347248292766674
+                    "Id": 2256347248292766674,
+                    "Child Entity Order": [
+                        "Entity_[6167382893987]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -7781,7 +7998,7 @@
                                     "guid": "{1A750577-5177-5BC0-B955-37B55E7CF544}",
                                     "subId": 283461704
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_tip_collision.stl.azmodel"
                             }
                         }
                     }
@@ -7836,7 +8053,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -7860,7 +8078,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -8213,7 +8432,7 @@
                                     "guid": "{DD3675D1-DD94-5D21-91A3-9C84FC6E85DE}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_1.stl.azmodel"
                             }
                         }
                     }
@@ -8268,7 +8487,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -8292,7 +8512,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -8344,7 +8565,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 17997930651389200511
+                    "Id": 17997930651389200511,
+                    "Child Entity Order": [
+                        "Entity_[6145908057507]",
+                        "Entity_[6193152697763]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -8481,6 +8706,21 @@
             "Id": "Entity_[6193152697763]",
             "Name": "arm_3_link_visual",
             "Components": {
+                "AZ::Render::EditorMeshComponent": {
+                    "$type": "AZ::Render::EditorMeshComponent",
+                    "Id": 11487285760107155746,
+                    "Controller": {
+                        "Configuration": {
+                            "ModelAsset": {
+                                "assetId": {
+                                    "guid": "{EFBC25AD-C500-56A5-9352-C5DCF3BDB280}",
+                                    "subId": 280672521
+                                },
+                                "assetHint": "assets/urdf/tiago_robot/tiago_description/meshes/arm/arm_3.stl.azmodel"
+                            }
+                        }
+                    }
+                },
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
                     "Id": 1412631439867064364
@@ -8506,21 +8746,37 @@
                     "Id": 1268473267183203928,
                     "Controller": {
                         "Configuration": {
-                            "materials": {
-                                "{}": {
-                                    "PropertyOverrides": {
-                                        "baseColor.color": {
-                                            "$type": "Color",
-                                            "Value": [
-                                                0.014349875040352345,
-                                                0.014349875040352345,
-                                                0.014349875040352345,
-                                                1.0
-                                            ]
+                            "materials": [
+                                {
+                                    "Key": {},
+                                    "Value": {
+                                        "PropertyOverrides": {
+                                            "baseColor.color": {
+                                                "$type": "Color",
+                                                "Value": [
+                                                    0.014349875040352345,
+                                                    0.014349875040352345,
+                                                    0.014349875040352345,
+                                                    1.0
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "Key": {
+                                        "materialSlotStableId": 2084814471
+                                    },
+                                    "Value": {
+                                        "MaterialAsset": {
+                                            "assetId": {
+                                                "guid": "{DD5F1A3F-B4A0-5A04-9822-5FC2453A567B}"
+                                            },
+                                            "assetHint": "assets/urdf/tiago_robot/tiago_description/meshes/arm/arm_3_defaultmaterial.azmaterial"
                                         }
                                     }
                                 }
-                            }
+                            ]
                         }
                     }
                 },
@@ -8638,7 +8894,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 14829334527229108823
+                    "Id": 14829334527229108823,
+                    "Child Entity Order": [
+                        "Entity_[6206037599651]",
+                        "Entity_[6029943940515]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -8779,7 +9039,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -8834,7 +9094,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -8858,7 +9119,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -8910,7 +9172,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 1762925759682829063
+                    "Id": 1762925759682829063,
+                    "Child Entity Order": [
+                        "Entity_[6214627534243]",
+                        "Entity_[6283347010979]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -9057,7 +9323,7 @@
                                     "guid": "{8DE52D5E-4C3F-5222-B17E-F04DF05A5D6C}",
                                     "subId": 271301340
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_abd_collision.stl.azmodel"
                             }
                         }
                     }
@@ -9112,7 +9378,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -9136,7 +9403,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -9479,7 +9747,7 @@
                                     "guid": "{A11FD18D-6631-51E6-9EBD-BCD9B5E09140}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_2.stl.azmodel"
                             }
                         }
                     }
@@ -9534,7 +9802,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -9558,7 +9827,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -9635,7 +9905,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9363442435049782487
+                    "Id": 9363442435049782487,
+                    "Child Entity Order": [
+                        "Entity_[6021354005923]",
+                        "Entity_[6240397338019]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -9733,7 +10007,7 @@
                                     "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                     "subId": 276443623
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_cylinder_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -9790,7 +10064,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -9817,7 +10090,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -9902,7 +10174,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2824650182121491301
+                    "Id": 2824650182121491301,
+                    "Child Entity Order": [
+                        "Entity_[6248987272611]",
+                        "Entity_[5978404332963]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -10008,7 +10284,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -10063,7 +10339,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10087,7 +10364,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10178,7 +10456,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11850792314540705948
+                    "Id": 11850792314540705948,
+                    "Child Entity Order": [
+                        "Entity_[6257577207203]",
+                        "Entity_[6201742632355]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -10284,7 +10566,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -10339,7 +10621,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10363,7 +10646,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10431,7 +10715,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15752361735430233865
+                    "Id": 15752361735430233865,
+                    "Child Entity Order": [
+                        "Entity_[6446555768227]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -10520,7 +10807,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 10957329199182593153
+                    "Id": 10957329199182593153,
+                    "Child Entity Order": [
+                        "Entity_[6270462109091]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -10653,7 +10943,7 @@
                                     "guid": "{600080F7-1D1A-5056-AA67-FF2DF360D2A6}",
                                     "subId": 281624663
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/srf05.stl.azmodel"
                             }
                         }
                     }
@@ -10708,7 +10998,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10732,7 +11023,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -10784,7 +11076,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 14033831531653209375
+                    "Id": 14033831531653209375,
+                    "Child Entity Order": [
+                        "Entity_[6455145702819]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -10873,7 +11168,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11157259117751103699
+                    "Id": 11157259117751103699,
+                    "Child Entity Order": [
+                        "Entity_[6480915506595]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -11003,7 +11301,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9766922234127465840
+                    "Id": 9766922234127465840,
+                    "Child Entity Order": [
+                        "Entity_[6287641978275]",
+                        "Entity_[6133023155619]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -11114,7 +11416,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -11169,7 +11471,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11193,7 +11496,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11261,7 +11565,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15932003218301405038
+                    "Id": 15932003218301405038,
+                    "Child Entity Order": [
+                        "Entity_[6296231912867]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -11402,7 +11709,7 @@
                                     "guid": "{1A750577-5177-5BC0-B955-37B55E7CF544}",
                                     "subId": 283461704
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_tip_collision.stl.azmodel"
                             }
                         }
                     }
@@ -11457,7 +11764,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11481,7 +11789,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11643,7 +11952,7 @@
                                     "guid": "{DD3675D1-DD94-5D21-91A3-9C84FC6E85DE}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_1.stl.azmodel"
                             }
                         }
                     }
@@ -11698,7 +12007,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11722,7 +12032,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11774,7 +12085,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11112071638556681621
+                    "Id": 11112071638556681621,
+                    "Child Entity Order": [
+                        "Entity_[6313411782051]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -11907,7 +12221,7 @@
                                     "guid": "{600080F7-1D1A-5056-AA67-FF2DF360D2A6}",
                                     "subId": 281624663
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/srf05.stl.azmodel"
                             }
                         }
                     }
@@ -11962,7 +12276,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -11986,7 +12301,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -12038,7 +12354,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12294745866761735300
+                    "Id": 12294745866761735300,
+                    "Child Entity Order": [
+                        "Entity_[6322001716643]",
+                        "Entity_[6279052043683]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -12185,7 +12505,7 @@
                                     "guid": "{EC3573B6-A9B7-5532-A9E5-DEB4FF8C74C0}",
                                     "subId": 272773678
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_6-wrist-2010.stl.azmodel"
                             }
                         }
                     }
@@ -12242,7 +12562,6 @@
                                                 "guid": "{EC3573B6-A9B7-5532-A9E5-DEB4FF8C74C0}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_6-wrist-2010_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -12269,7 +12588,6 @@
                                                 "guid": "{EC3573B6-A9B7-5532-A9E5-DEB4FF8C74C0}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_6-wrist-2010_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -12345,7 +12663,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2268354503344179455
+                    "Id": 2268354503344179455,
+                    "Child Entity Order": [
+                        "Entity_[6330591651235]",
+                        "Entity_[6012764071331]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -12456,7 +12778,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -12511,7 +12833,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -12535,7 +12858,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -12626,7 +12950,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11574556922508196253
+                    "Id": 11574556922508196253,
+                    "Child Entity Order": [
+                        "Entity_[6339181585827]",
+                        "Entity_[6291936945571]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -12737,7 +13065,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -12792,7 +13120,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -12816,7 +13145,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -12884,7 +13214,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 13967272461683341891
+                    "Id": 13967272461683341891,
+                    "Child Entity Order": [
+                        "Entity_[6347771520419]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -13017,7 +13350,7 @@
                                     "guid": "{600080F7-1D1A-5056-AA67-FF2DF360D2A6}",
                                     "subId": 281624663
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/srf05.stl.azmodel"
                             }
                         }
                     }
@@ -13072,7 +13405,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13096,7 +13430,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13148,7 +13483,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 10699816830812809330
+                    "Id": 10699816830812809330,
+                    "Child Entity Order": [
+                        "Entity_[6536750081443]",
+                        "Entity_[6356361455011]"
+                    ]
                 },
                 "EditorInspectorComponent": {
                     "$type": "EditorInspectorComponent",
@@ -13184,12 +13523,43 @@
                     "$type": "EditorVisibilityComponent",
                     "Id": 10670768129465348696
                 },
+                "InputConfigurationComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 11612802693518645035,
+                    "m_template": {
+                        "$type": "InputConfigurationComponent",
+                        "Input Event Bindings": {
+                            "assetId": {
+                                "guid": "{B524A868-80AE-5DFB-9F75-1A58C9BDFF11}"
+                            },
+                            "assetHint": "scripts/rosrobot_inputs.inputbindings"
+                        }
+                    }
+                },
                 "ROS2FrameComponent": {
                     "$type": "GenericComponentWrapper",
                     "Id": 10825375415870958509,
                     "m_template": {
                         "$type": "ROS2FrameComponent",
+                        "Namespace Configuration": {
+                            "Namespace Strategy": 1
+                        },
                         "Frame Name": "base_footprint"
+                    }
+                },
+                "ROS2OdometrySensorComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 6828108429069413788,
+                    "m_template": {
+                        "$type": "ROS2OdometrySensorComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "nav_msgs::msg::Odometry": {
+                                    "Type": "nav_msgs::msg::Odometry",
+                                    "Topic": "odom"
+                                }
+                            }
+                        }
                     }
                 },
                 "ROS2RobotControlComponent": {
@@ -13199,6 +13569,36 @@
                         "$type": "ROS2RobotControlComponent",
                         "SubscriberConfiguration": {
                             "Topic": "cmd_vel"
+                        }
+                    }
+                },
+                "SkidSteeringControlComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 10026857151393875842,
+                    "m_template": {
+                        "$type": "SkidSteeringControlComponent"
+                    }
+                },
+                "SkidSteeringModelComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 8944094999478653637,
+                    "m_template": {
+                        "$type": "SkidSteeringModelComponent",
+                        "VehicleConfiguration": {
+                            "AxlesConfigurations": [
+                                {
+                                    "AxleTag": "center",
+                                    "AxleWheels": [
+                                        "Entity_[6455145702819]",
+                                        "Entity_[6446555768227]"
+                                    ],
+                                    "WheelRadius": 0.0989999994635582,
+                                    "IsSteering": true,
+                                    "IsDrive": true
+                                }
+                            ],
+                            "Track": 0.0,
+                            "Wheelbase": 0.30000001192092896
                         }
                     }
                 },
@@ -13223,7 +13623,27 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 4870985022358645040
+                    "Id": 4870985022358645040,
+                    "Child Entity Order": [
+                        "Entity_[6141613090211]",
+                        "Entity_[6197447665059]",
+                        "Entity_[6218922501539]",
+                        "Entity_[6223217468835]",
+                        "Entity_[6364951389603]",
+                        "Entity_[6360656422307]",
+                        "Entity_[6115843286435]",
+                        "Entity_[6180267795875]",
+                        "Entity_[6300526880163]",
+                        "Entity_[6502390343075]",
+                        "Entity_[6090073482659]",
+                        "Entity_[6309116814755]",
+                        "Entity_[6266167141795]",
+                        "Entity_[6343476553123]",
+                        "Entity_[6472325572003]",
+                        "Entity_[6274757076387]",
+                        "Entity_[6261872174499]",
+                        "Entity_[6437965833635]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -13248,7 +13668,7 @@
                         "MaterialSlots": {
                             "Slots": [
                                 {
-                                    "Name": "Entire object"
+                                    "Name": "DefaultMaterial"
                                 }
                             ]
                         }
@@ -13356,7 +13776,7 @@
                                     "guid": "{08E8EF71-25D2-53AF-8C2B-AEE655DA8947}",
                                     "subId": 280297057
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/base.stl.azmodel"
                             }
                         }
                     }
@@ -13411,7 +13831,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{9C71C53D-DA17-516D-8BFF-32A52625FEC6}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/white.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13435,7 +13856,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{9C71C53D-DA17-516D-8BFF-32A52625FEC6}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/white.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13568,7 +13990,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 13057096295845478313
+                    "Id": 13057096295845478313,
+                    "Child Entity Order": [
+                        "Entity_[6373541324195]",
+                        "Entity_[6244692305315]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -13709,7 +14135,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -13764,7 +14190,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13788,7 +14215,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -13859,7 +14287,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9429540765397791005
+                    "Id": 9429540765397791005,
+                    "Child Entity Order": [
+                        "Entity_[6382131258787]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -13954,7 +14385,7 @@
                                     "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                     "subId": 274434668
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_sphere_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -14011,7 +14442,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -14038,7 +14468,6 @@
                                                 "guid": "{1EE46427-D1C2-5698-B30D-B4CCF46B15CD}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_sphere_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -14192,7 +14621,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15436997901937911650
+                    "Id": 15436997901937911650,
+                    "Child Entity Order": [
+                        "Entity_[5926864725411]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -14285,7 +14717,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 16054631489635016110
+                    "Id": 16054631489635016110,
+                    "Child Entity Order": [
+                        "Entity_[6399311127971]",
+                        "Entity_[6188857730467]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -14432,7 +14868,7 @@
                                     "guid": "{15B7CFD8-01FB-5349-8E3D-A72DC81431FB}",
                                     "subId": 280856991
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/arm_2.stl.azmodel"
                             }
                         }
                     }
@@ -14487,7 +14923,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -14511,7 +14948,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -14563,7 +15001,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12417088784439892032
+                    "Id": 12417088784439892032,
+                    "Child Entity Order": [
+                        "Entity_[6407901062563]",
+                        "Entity_[6253282239907]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -14709,7 +15151,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -14764,7 +15206,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -14788,7 +15231,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -14863,7 +15307,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 4579416146201825149
+                    "Id": 4579416146201825149,
+                    "Child Entity Order": [
+                        "Entity_[6416490997155]",
+                        "Entity_[6566814852515]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -14974,7 +15422,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -15029,7 +15477,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15053,7 +15502,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15121,7 +15571,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 9311173017383198999
+                    "Id": 9311173017383198999,
+                    "Child Entity Order": [
+                        "Entity_[6425080931747]",
+                        "Entity_[5986994267555]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -15268,7 +15722,7 @@
                                     "guid": "{E3BBC791-0188-5CED-97DA-B6197BAFB150}",
                                     "subId": 282631164
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/thumb_abd_collision.stl.azmodel"
                             }
                         }
                     }
@@ -15323,7 +15777,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15347,7 +15802,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15641,7 +16097,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 1905468276559369940
+                    "Id": 1905468276559369940,
+                    "Child Entity Order": [
+                        "Entity_[6442260800931]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -15734,7 +16193,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -15789,7 +16248,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15813,7 +16273,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -15891,9 +16352,18 @@
                         }
                     },
                     "ShapeConfiguration": {
-                        "ShapeType": 0,
+                        "ShapeType": 3,
                         "Sphere": {
                             "Radius": 0.09849999845027924
+                        },
+                        "Cylinder": {
+                            "Configuration": {
+                                "CookedData": "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",
+                                "Type": 1
+                            },
+                            "Subdivision": 32,
+                            "Height": 0.029999999329447746,
+                            "Radius": 0.0989999994635582
                         }
                     }
                 },
@@ -15907,7 +16377,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 15635403101494547439
+                    "Id": 15635403101494547439,
+                    "Child Entity Order": [
+                        "Entity_[6450850735523]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -15927,6 +16400,9 @@
                         },
                         "Positive Limit": 360.0,
                         "Negative Limit": -360.0
+                    },
+                    "Motor": {
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -16005,6 +16481,15 @@
                             0.0
                         ]
                     }
+                },
+                "WheelControllerComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 2808532013729880856,
+                    "m_template": {
+                        "$type": "WheelControllerComponent",
+                        "SteeringEntity": "",
+                        "SteeringScale": 50.0
+                    }
                 }
             }
         },
@@ -16022,7 +16507,7 @@
                                     "guid": "{3D448EAE-94B8-50C4-BC27-3EA5DCFCC4E4}",
                                     "subId": 282111860
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/wheel.stl.azmodel"
                             }
                         }
                     }
@@ -16077,7 +16562,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16101,7 +16587,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16163,9 +16650,18 @@
                         }
                     },
                     "ShapeConfiguration": {
-                        "ShapeType": 0,
+                        "ShapeType": 3,
                         "Sphere": {
                             "Radius": 0.09849999845027924
+                        },
+                        "Cylinder": {
+                            "Configuration": {
+                                "CookedData": "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",
+                                "Type": 1
+                            },
+                            "Subdivision": 32,
+                            "Height": 0.029999999329447746,
+                            "Radius": 0.0989999994635582
                         }
                     }
                 },
@@ -16179,7 +16675,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 1192037961862509906
+                    "Id": 1192037961862509906,
+                    "Child Entity Order": [
+                        "Entity_[6459440670115]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -16199,6 +16698,9 @@
                         },
                         "Positive Limit": 360.0,
                         "Negative Limit": -360.0
+                    },
+                    "Motor": {
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -16277,6 +16779,15 @@
                             0.0
                         ]
                     }
+                },
+                "WheelControllerComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 17207959420459346685,
+                    "m_template": {
+                        "$type": "WheelControllerComponent",
+                        "SteeringEntity": "",
+                        "SteeringScale": 50.0
+                    }
                 }
             }
         },
@@ -16294,7 +16805,7 @@
                                     "guid": "{3D448EAE-94B8-50C4-BC27-3EA5DCFCC4E4}",
                                     "subId": 282111860
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/wheel.stl.azmodel"
                             }
                         }
                     }
@@ -16349,7 +16860,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16373,7 +16885,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16432,7 +16945,19 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12006872843345793141
+                    "Id": 12006872843345793141,
+                    "Child Entity Order": [
+                        "Entity_[6468030604707]",
+                        "Entity_[6489505441187]",
+                        "Entity_[6004174136739]",
+                        "Entity_[6098663417251]",
+                        "Entity_[6124433221027]",
+                        "Entity_[6210332566947]",
+                        "Entity_[6072893613475]",
+                        "Entity_[6081483548067]",
+                        "Entity_[6420785964451]",
+                        "Entity_[6377836291491]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -16457,7 +16982,7 @@
                         "MaterialSlots": {
                             "Slots": [
                                 {
-                                    "Name": "Entire object"
+                                    "Name": "DefaultMaterial"
                                 }
                             ]
                         }
@@ -16570,7 +17095,7 @@
                                     "guid": "{509304C5-0CDE-5E38-BF10-EF51E005E21C}",
                                     "subId": 270919641
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/palm.stl.azmodel"
                             }
                         }
                     }
@@ -16625,7 +17150,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16649,7 +17175,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16811,7 +17338,7 @@
                                     "guid": "{DD3675D1-DD94-5D21-91A3-9C84FC6E85DE}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_1.stl.azmodel"
                             }
                         }
                     }
@@ -16866,7 +17393,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16890,7 +17418,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -16978,7 +17507,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 11113324647075731748
+                    "Id": 11113324647075731748,
+                    "Child Entity Order": [
+                        "Entity_[6485210473891]",
+                        "Entity_[6236102370723]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -17076,7 +17609,7 @@
                                     "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                     "subId": 276443623
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_cylinder_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -17133,7 +17666,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -17160,7 +17692,6 @@
                                                 "guid": "{F322592F-43BC-50E7-903C-CC231846093F}",
                                                 "subId": 1738373820
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "objects/_primitives/_cylinder_1x1_lambert3_10605252722126846652.fbx.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -17343,7 +17874,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 2627622877598625441
+                    "Id": 2627622877598625441,
+                    "Child Entity Order": [
+                        "Entity_[6498095375779]",
+                        "Entity_[6163087926691]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -17449,7 +17984,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -17504,7 +18039,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -17528,7 +18064,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -17652,7 +18189,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 14617875641519918957
+                    "Id": 14617875641519918957,
+                    "Child Entity Order": [
+                        "Entity_[6506685310371]",
+                        "Entity_[6154497992099]"
+                    ]
                 },
                 "EditorFixedJointComponent": {
                     "$type": "EditorFixedJointComponent",
@@ -17750,7 +18291,7 @@
                                     "guid": "{61E50CD9-3472-5137-A05C-0D0CC61B3E68}",
                                     "subId": 276556567
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_fix.stl.azmodel"
                             }
                         }
                     }
@@ -17807,7 +18348,6 @@
                                                 "guid": "{61E50CD9-3472-5137-A05C-0D0CC61B3E68}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_fix_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -17834,7 +18374,6 @@
                                                 "guid": "{61E50CD9-3472-5137-A05C-0D0CC61B3E68}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/torso_fix_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -18016,7 +18555,7 @@
                                     "guid": "{A11FD18D-6631-51E6-9EBD-BCD9B5E09140}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_2.stl.azmodel"
                             }
                         }
                     }
@@ -18071,7 +18610,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -18095,7 +18635,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -18147,7 +18688,10 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12387735760462148421
+                    "Id": 12387735760462148421,
+                    "Child Entity Order": [
+                        "Entity_[6523865179555]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -18293,7 +18837,7 @@
                                     "guid": "{1A750577-5177-5BC0-B955-37B55E7CF544}",
                                     "subId": 283461704
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_tip_collision.stl.azmodel"
                             }
                         }
                     }
@@ -18348,7 +18892,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -18372,7 +18917,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -18424,7 +18970,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 12842245594081742062
+                    "Id": 12842245594081742062,
+                    "Child Entity Order": [
+                        "Entity_[5995584202147]",
+                        "Entity_[6532455114147]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -18566,7 +19116,7 @@
                                     "guid": "{98EC99C1-826F-5241-B707-C8F3C8D1B95E}",
                                     "subId": 269379218
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_1.stl.azmodel"
                             }
                         }
                     }
@@ -18623,7 +19173,6 @@
                                                 "guid": "{98EC99C1-826F-5241-B707-C8F3C8D1B95E}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_1_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -18650,7 +19199,6 @@
                                                 "guid": "{98EC99C1-826F-5241-B707-C8F3C8D1B95E}",
                                                 "subId": 2084814471
                                             },
-                                            "loadBehavior": "PreLoad",
                                             "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/head_1_defaultmaterial_3809502407269006983.stl.azmaterial"
                                         },
                                         "PropertyOverrides": {
@@ -18925,7 +19473,7 @@
                                     "guid": "{A11FD18D-6631-51E6-9EBD-BCD9B5E09140}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_2.stl.azmodel"
                             }
                         }
                     }
@@ -18980,7 +19528,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19004,7 +19553,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19185,7 +19735,7 @@
                                     "guid": "{A11FD18D-6631-51E6-9EBD-BCD9B5E09140}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/caster_2.stl.azmodel"
                             }
                         }
                     }
@@ -19240,7 +19790,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19264,7 +19815,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{852642AF-E9A8-5D88-BB0C-C41FB073E1E1}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/darkgrey.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19339,7 +19891,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 205271322803847370
+                    "Id": 205271322803847370,
+                    "Child Entity Order": [
+                        "Entity_[6562519885219]",
+                        "Entity_[6369246356899]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -19450,7 +20006,7 @@
                                     "guid": "{C15CD465-9589-56ED-945F-8416FA4798A3}",
                                     "subId": 284301017
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "objects/_primitives/_box_1x1.fbx.azmodel"
                             }
                         }
                     }
@@ -19505,7 +20061,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19529,7 +20086,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19597,7 +20155,11 @@
                 },
                 "EditorEntitySortComponent": {
                     "$type": "EditorEntitySortComponent",
-                    "Id": 14301807791707009805
+                    "Id": 14301807791707009805,
+                    "Child Entity Order": [
+                        "Entity_[6571109819811]",
+                        "Entity_[6493800408483]"
+                    ]
                 },
                 "EditorHingeJointComponent": {
                     "$type": "EditorHingeJointComponent",
@@ -19743,7 +20305,7 @@
                                     "guid": "{AB63B996-CDE8-5A9B-8E92-71EB1B5333D9}",
                                     "subId": 280826885
                                 },
-                                "loadBehavior": "PreLoad"
+                                "assetHint": "assets/urdfimporter/3079305794_tiago.urdf/finger_flex_collision.stl.azmodel"
                             }
                         }
                     }
@@ -19798,7 +20360,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {
@@ -19822,7 +20385,8 @@
                                         "MaterialAsset": {
                                             "assetId": {
                                                 "guid": "{43778718-F1CA-57D7-948C-A6D18292B90C}"
-                                            }
+                                            },
+                                            "assetHint": "gazebo/black.azmaterial"
                                         },
                                         "PropertyOverrides": {
                                             "baseColor.color": {

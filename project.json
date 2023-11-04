@@ -24,7 +24,8 @@
         "ROS2",
         "WarehouseSample",
         "RosRobotSample",
-        "RGL"
+        "RGL",
+        "ProteusRobot"
     ],
     "engine_version": "2.1.0"
 }
