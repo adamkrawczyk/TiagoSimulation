@@ -584,7 +584,22 @@
                     "m_template": {
                         "$type": "ROS2RobotControlComponent",
                         "SubscriberConfiguration": {
-                            "Topic": "cmd_vel"
+                            "Topic": "base_footprint/cmd_vel"
+                        }
+                    }
+                },
+                "ROS2WheelOdometryComponent": {
+                    "$type": "GenericComponentWrapper",
+                    "Id": 7837743983585862102,
+                    "m_template": {
+                        "$type": "ROS2WheelOdometryComponent",
+                        "SensorConfiguration": {
+                            "Publishers": {
+                                "nav_msgs::msg::Odometry": {
+                                    "Type": "nav_msgs::msg::Odometry",
+                                    "Topic": "odom"
+                                }
+                            }
                         }
                     }
                 },
@@ -1033,7 +1048,7 @@
                     "Parent Entity": "Entity_[896857590994]",
                     "Transform Data": {
                         "Translate": [
-                            -0.17350000143051147,
+                            -0.1679999977350235,
                             -0.10199999809265137,
                             -0.03350000083446503
                         ]
@@ -1237,7 +1252,6 @@
                                     "guid": "{4E085BD3-4871-5A27-BD5D-56A31110F00E}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad",
                                 "assetHint": "assets/urdfimporter/683990087_tiago.urdf/caster_2.azmodel"
                             }
                         }
@@ -1675,7 +1689,6 @@
                                     "guid": "{FCD8C6A7-8A3B-5231-B324-15C2F714C513}",
                                     "subId": 282436276
                                 },
-                                "loadBehavior": "PreLoad",
                                 "assetHint": "assets/urdfimporter/683990087_tiago.urdf/sick_tim551.azmodel"
                             }
                         }
@@ -1739,7 +1752,14 @@
                 "TransformComponent": {
                     "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
                     "Id": 6709902144452040098,
-                    "Parent Entity": "Entity_[995641838802]"
+                    "Parent Entity": "Entity_[995641838802]",
+                    "Transform Data": {
+                        "Translate": [
+                            -0.07007360458374023,
+                            0.0,
+                            0.0013325363397598267
+                        ]
+                    }
                 }
             }
         },
@@ -2434,7 +2454,7 @@
                         },
                         "Cylinder": {
                             "Configuration": {
-                                "CookedData": "TlhTAUNWWE0OAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tBvxy85jW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85jW9vArXo7trSWExzczMvArXo7trSWExzczMvArXoztDvxw85jW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85jW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7vmNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvmNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztGvxy85TW9PArXoztGvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAMAUez+0xUe+AAAAAGbdyLwQAAQTMdtUP9o5Dr8AAAAAZN3IvBQABBLZOQ6/MdtUvwAAAABk3ci8GAAEELrFR76/FHu/AAAAAGXdyLwcAAQMusVHPr4Uez8AAAAAZt3IvCAABAbZOQ4/MdtUPwAAAABl3ci8JAAEBr8Ue7+6xUc+AAAAAGbdyLwoAAQAMdtUv9s5Dj8AAAAAZt3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEFsfFRz6+FHu/AAAAAGbdyLw0AAQNvhR7v8bFR74AAAAAZt3IvDgABAEw21S/3DkOvwAAAABm3ci8PAAEENs5Dr8w21Q/AAAAAGXdyLxAAAQYxsVHvr4Uez8AAAAAZt3IvEQABAox21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQTAAAAAAAAAAAAAIC/Cteju1AAEAIaBwYLGQQDAhwQDw4dFhUUAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYBQQZGBkLChoUExsaGwgHHhcWHR4dDg0fERAcHxwCAR8BAAUYCgkIGxMSFx4NDBEADAADAAQACgAJAAIAAQAQAA8ABgAFAA4ADQAIAAcACwERARABAgIJAhEDDAMRAwQEEQQKBREFDgUGBg8GEQcRBwsHCAgNCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBEBEAARAAAQIAAgkCCREAAwQAAwwDDBEDBBEEChEABAoFBhEFDhEABQ4ABQYABg8GDxEHCBEHCxEABwsABwgACA0IDREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7UoKgNy0yUzFrYo2jXyPHImtijaMuMlMx1epYll8jxyLV6liWFD3IMVQIezAUQQ2vnckcrgAAgL8AAIC/CtejO5gYyDynLz07py89Ow==",
+                                "CookedData": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07",
                                 "Type": 1
                             },
                             "Subdivision": 32,
@@ -3000,7 +3020,7 @@
                         },
                         "Cylinder": {
                             "Configuration": {
-                                "CookedData": "TlhTAUNWWE0OAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tBvxy85jW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85jW9vArXo7trSWExzczMvArXo7trSWExzczMvArXoztDvxw85jW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85jW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7vmNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvmNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztGvxy85TW9PArXoztGvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAMAUez+0xUe+AAAAAGbdyLwQAAQTMdtUP9o5Dr8AAAAAZN3IvBQABBLZOQ6/MdtUvwAAAABk3ci8GAAEELrFR76/FHu/AAAAAGXdyLwcAAQMusVHPr4Uez8AAAAAZt3IvCAABAbZOQ4/MdtUPwAAAABl3ci8JAAEBr8Ue7+6xUc+AAAAAGbdyLwoAAQAMdtUv9s5Dj8AAAAAZt3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEFsfFRz6+FHu/AAAAAGbdyLw0AAQNvhR7v8bFR74AAAAAZt3IvDgABAEw21S/3DkOvwAAAABm3ci8PAAEENs5Dr8w21Q/AAAAAGXdyLxAAAQYxsVHvr4Uez8AAAAAZt3IvEQABAox21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQTAAAAAAAAAAAAAIC/Cteju1AAEAIaBwYLGQQDAhwQDw4dFhUUAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYBQQZGBkLChoUExsaGwgHHhcWHR4dDg0fERAcHxwCAR8BAAUYCgkIGxMSFx4NDBEADAADAAQACgAJAAIAAQAQAA8ABgAFAA4ADQAIAAcACwERARABAgIJAhEDDAMRAwQEEQQKBREFDgUGBg8GEQcRBwsHCAgNCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBEBEAARAAAQIAAgkCCREAAwQAAwwDDBEDBBEEChEABAoFBhEFDhEABQ4ABQYABg8GDxEHCBEHCxEABwsABwgACA0IDREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7UoKgNy0yUzFrYo2jXyPHImtijaMuMlMx1epYll8jxyLV6liWFD3IMVQIezAUQQ2vnckcrgAAgL8AAIC/CtejO5gYyDynLz07py89Ow==",
+                                "CookedData": "TlhTAUNWWE0NAAAAAAAAAElDRQFDTEhMCQAAACAAAAAwAAAAEgAAAGAAAADnNb28Q78cPArXo7vNzMy88jAWsQrXo7vNzMy88jAWsQrXozvnNb28Q78cPArXozvD0JC8wtCQPArXozvD0JC8wtCQPArXo7tDvxw85zW9PArXo7vyMJawzczMPArXo7vyMJawzczMPArXoztDvxw85zW9PArXozvD0JA8w9CQPArXozvD0JA8w9CQPArXo7tBvxy85zW9vArXozvC0JC8w9CQvArXozvC0JC8w9CQvArXo7tBvxy85zW9vArXo7trSWExzczMvArXo7trSWExzczMvArXozvnNb08QL8cvArXo7vNzMw8AAAAAArXo7vNzMw8AAAAAArXozvnNb08QL8cvArXozvE0JA8wdCQvArXozvE0JA8wdCQvArXo7tIvxw85TW9vArXo7tIvxw85TW9vArXozvlNb28R78cvArXozvlNb28R78cvArXo7vlNb08Rb8cPArXoztHvxy85TW9PArXoztHvxy85TW9PArXo7vlNb08Rb8cPArXo7sAAAAAAAAAAAAAgD8K16O7AAAQAL8Ue7+uxUc+AAAAAGXdyLwQAAQSMNtUv945Dj8AAAAAZ93IvBQABBavxUc+wBR7PwAAAABm3ci8GAAEDNs5Dj8w21Q/AAAAAGbdyLwcAAQM2zkOvzDbVL8AAAAAZt3IvCAABAauxUe+vxR7vwAAAABl3ci8JAAEBsAUez+0xUe+AAAAAGbdyLwoAAQAMdtUP9o5Dr8AAAAAZN3IvCwABADeOQ4/L9tUvwAAAABm3ci8MAAEBMfFRz6+FHu/AAAAAGbdyLw0AAQHvhR7v8bFR74AAAAAZt3IvDgABBMw21S/3DkOvwAAAABm3ci8PAAECtw5Dr8w21Q/AAAAAGXdyLxAAAQYw8VHvr0Uez8AAAAAZd3IvEQABBAx21Q/2DkOPwAAAABk3ci8SAAEGr4Uez/GxUc+AAAAAGXdyLxMAAQBAAAAAAAAAAAAAIC/Cteju1AAEAIaDQwRGRYVFBwKCQgdBAMCAAECAwADBAUGBwgJBgkKCwwNDg8MDxAREhMUFRIVFhcYFxYZGBkREBoCARsaGw4NHgUEHR4dCAcfCwocHxwUEx8TEhcYEA8OGwEABR4HBgsADAAFAAYACgAJAAgABwAQAA8ABAADAA4ADQACAAEACwERAQsBAgINAhEDEQMOAwQEDwQRBQwFEQUGBhEGCgcRBxAHCAgJCBEJEQkKChELEQsMDBENEQ0ODhEPEQ8QEBEBAhEBCxEAAQsAAQIAAg0CDREDBBEDDhEAAw4AAwQABA8EDxEABQYABQwFDBEFBhEGChEABgoHCBEHEBEABxAABwgACAkICREJChEACQoACwwLDBEADxAADQ4NDhEPEBEAAAAAzczMvM3MzLwK16O7zczMPM3MzDwK16M7U4KgNy4yUzF3HDKjYqcUI3ccMqMuMlMxCRSaFmKnFCMJFJoWFT3IMYsepS98oQEw5H6KrgAAgL8K16M7lxjIPMkvPTvJLz07",
                                 "Type": 1
                             },
                             "Subdivision": 32,
@@ -3166,7 +3186,7 @@
                                     "guid": "{341EA4DC-11C3-5C6A-BE64-35184F66018C}",
                                     "subId": 3003559992
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_core.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_core.dae.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -3175,7 +3195,7 @@
                                         "subId": 3003559992
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_core.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_core.dae.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }
@@ -3201,7 +3221,7 @@
                                     "guid": "{0B09F941-A42A-5B78-88E1-687E1F1A90CB}",
                                     "subId": 1045305859
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_shoulder.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_shoulder.dae.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -3210,7 +3230,7 @@
                                         "subId": 1045305859
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_shoulder.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_shoulder.dae.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }
@@ -3236,7 +3256,7 @@
                                     "guid": "{6CD5F61A-CE78-58C3-8073-A367BD3AEC12}",
                                     "subId": 1531875110
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_neck.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_neck.dae.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -3245,7 +3265,7 @@
                                         "subId": 1531875110
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_neck.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/torso_lift_collision_neck.dae.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }
@@ -3440,7 +3460,6 @@
                                     "guid": "{4E085BD3-4871-5A27-BD5D-56A31110F00E}",
                                     "subId": 270183700
                                 },
-                                "loadBehavior": "PreLoad",
                                 "assetHint": "assets/urdfimporter/683990087_tiago.urdf/caster_2.azmodel"
                             }
                         }
@@ -3773,7 +3792,7 @@
                                     "guid": "{BEDF8204-D033-5B6F-A4B0-33E680253ED2}",
                                     "subId": 4077204118
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/base_collision.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/base_collision.stl.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -3782,7 +3801,7 @@
                                         "subId": 4077204118
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/base_collision.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/base_collision.stl.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }
@@ -3868,7 +3887,6 @@
                                     "guid": "{97155CD6-1A6F-5518-A0BB-9643CC56076D}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad",
                                 "assetHint": "assets/urdfimporter/683990087_tiago.urdf/caster_1.azmodel"
                             }
                         }
@@ -4520,7 +4538,7 @@
                     "Parent Entity": "Entity_[896857590994]",
                     "Transform Data": {
                         "Translate": [
-                            -0.17350000143051147,
+                            -0.1679999977350235,
                             0.10199999809265137,
                             -0.03350000083446503
                         ]
@@ -4903,7 +4921,7 @@
                                     "guid": "{32FC9298-60C4-5F16-8B43-262824822B18}",
                                     "subId": 2659955264
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_2_collision.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_2_collision.dae.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -4912,7 +4930,7 @@
                                         "subId": 2659955264
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_2_collision.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_2_collision.dae.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }
@@ -5882,7 +5900,6 @@
                                     "guid": "{97155CD6-1A6F-5518-A0BB-9643CC56076D}",
                                     "subId": 269745326
                                 },
-                                "loadBehavior": "PreLoad",
                                 "assetHint": "assets/urdfimporter/683990087_tiago.urdf/caster_1.azmodel"
                             }
                         }
@@ -6407,8 +6424,7 @@
                                     "Topic": "scan"
                                 }
                             }
-                        },
-                        "lidarImplementation": "Scene Queries"
+                        }
                     }
                 },
                 "TransformComponent": {
@@ -6417,9 +6433,9 @@
                     "Parent Entity": "Entity_[896857590994]",
                     "Transform Data": {
                         "Translate": [
-                            0.20200000703334808,
+                            0.3080267906188965,
                             0.0,
-                            -0.0040000006556510925
+                            0.014232903718948364
                         ]
                     }
                 }
@@ -6489,7 +6505,7 @@
                                     "guid": "{051AEAF9-27FE-5431-ADC3-356AEE21C7A6}",
                                     "subId": 809651046
                                 },
-                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_1_collision.pxmesh"
+                                "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_1_collision.dae.pxmesh"
                             },
                             "Configuration": {
                                 "PhysicsAsset": {
@@ -6498,7 +6514,7 @@
                                         "subId": 809651046
                                     },
                                     "loadBehavior": "QueueLoad",
-                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_1_collision.pxmesh"
+                                    "assetHint": "assets/urdfimporter/683990087_tiago.urdf/head_1_collision.dae.pxmesh"
                                 },
                                 "UseMaterialsFromAsset": false
                             }

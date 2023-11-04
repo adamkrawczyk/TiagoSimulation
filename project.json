@@ -23,7 +23,8 @@
     "gem_names": [
         "ROS2",
         "WarehouseSample",
-        "RosRobotSample"
+        "RosRobotSample",
+        "RGL"
     ],
     "engine_version": "2.1.0"
 }
