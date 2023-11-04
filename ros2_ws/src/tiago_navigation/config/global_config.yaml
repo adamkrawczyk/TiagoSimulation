@@ -1,0 +1,6 @@
+global_config:
+  ros__parameters:
+    map_name: 'map.yaml'     # Localization: tiago_finder package
+    use_moveit: 'false'
+    use_slam: 'true'
+    use_rviz: 'true'
