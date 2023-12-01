@@ -12200,6 +12200,7 @@
                         "lidarCore": {
                             "lidarConfiguration": {
                                 "lidarModelName": "CustomLidar2D",
+                                "lidarImplementation": "RobotecGPULidar",
                                 "LidarParameters": {
                                     "Name": "base_sonar_01",
                                     "Layers": 5,
