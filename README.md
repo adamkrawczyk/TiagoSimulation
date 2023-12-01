@@ -68,6 +68,7 @@ To run teleop controll: `ros2 run teleop_twist_keyboard teleop_twist_keyboard --
 | 2 | base_sonar_x_link | Robotec GPU lidar <TickBasedSource> | `pc` "5hz Best Effort Volatile | Point scan simulating 2D distance sensor |
 | 3 | head_front_camera_rgb_frame | ROS2 Camera Sensor <TickBasedSource> | `camera_image_color` "30hz Best Effort Volatile" | RGB and depth image |
 | 4 | base_imu_link | ROS2 IMU Sensor <PhysicsBasedSource> | `imu` "100hz Best Effort Volatile" | IMU data |
+| 5 | base_footprint | ROS2 Odometry Sensor <PhysicsBasedSource> | `odom` "10hz Best Effort Volatile" | Odometry data |
 
 `TickBasedSource` - data is generated in fixed time intervals based on the simulation time. Implements tick callbacks as sensor event source. Source event (ROS2::SensorEventSource) is signalled based on system ticks.
 `PhysicsBasedSource` - data is generated based on the physics simulation. Implements physics callbacks as sensor event source. Source event (ROS2::SensorEventSource) is signalled based on scene. The working frequency of this event source can be changed through engine settings (physics simulation delta).
