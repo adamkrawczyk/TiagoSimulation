@@ -98,7 +98,7 @@ ly_add_target(
             Gem::ImGui.Static
             Gem::ROS2.Static
             AZ::AzToolsFramework
-            Gem::AtomLyIntegration_CommonFeatures.Editor.Static
+            Gem::CommonFeaturesAtom.Editor.Static
             Gem::LmbrCentral.API
         PRIVATE
             ${gem_name}.Private.Object

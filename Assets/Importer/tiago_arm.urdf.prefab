@@ -5500,7 +5500,45 @@
             "Components": {
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 10662893723373161537
+                    "Id": 10662893723373161537,
+                    "DisabledComponents": {
+                        "ROS2LidarSensorComponent": {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 3443363042430353861,
+                            "m_template": {
+                                "$type": "ROS2LidarSensorComponent",
+                                "SensorConfiguration": {
+                                    "Frequency (HZ)": 20.0,
+                                    "Publishers": {
+                                        "sensor_msgs::msg::PointCloud2": {
+                                            "Type": "sensor_msgs::msg::PointCloud2",
+                                            "Topic": "pc"
+                                        }
+                                    }
+                                },
+                                "lidarCore": {
+                                    "lidarConfiguration": {
+                                        "lidarModelName": "Ouster OS2-64",
+                                        "lidarImplementation": "RobotecGPULidar",
+                                        "LidarParameters": {
+                                            "Name": "Ouster OS2-64",
+                                            "Layers": 64,
+                                            "Points per layer": 2048,
+                                            "Min vertical angle": 11.25,
+                                            "Max vertical angle": -11.25,
+                                            "Max range": 225.0,
+                                            "Noise Parameters": {
+                                                "Distance noise standard deviation base": 0.006000000052154064
+                                            }
+                                        },
+                                        "ExcludedEntities": [
+                                            "Entity_[6094368449955]"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
                 },
                 "EditorEntityIconComponent": {
                     "$type": "EditorEntityIconComponent",
@@ -5581,35 +5619,27 @@
                         "Joint Name": "base_laser_joint"
                     }
                 },
-                "ROS2LidarSensorComponent": {
+                "ROS2Lidar2DSensorComponent": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 3443363042430353861,
+                    "Id": 17534455809082004222,
                     "m_template": {
-                        "$type": "ROS2LidarSensorComponent",
+                        "$type": "ROS2Lidar2DSensorComponent",
                         "SensorConfiguration": {
                             "Publishers": {
-                                "sensor_msgs::msg::PointCloud2": {
-                                    "Type": "sensor_msgs::msg::PointCloud2",
-                                    "Topic": "pc"
+                                "sensor_msgs::msg::LaserScan": {
+                                    "Type": "sensor_msgs::msg::LaserScan",
+                                    "Topic": "scan"
                                 }
                             }
                         },
                         "lidarCore": {
                             "lidarConfiguration": {
-                                "lidarModelName": "CustomLidar2D",
+                                "lidarModelName": "Slamtec RPLIDAR S1",
+                                "lidarImplementation": "RobotecGPULidar",
                                 "LidarParameters": {
-                                    "Name": "base_laser",
-                                    "Layers": 666,
-                                    "Points per layer": 1,
-                                    "Min horizontal angle": -110.0,
-                                    "Max horizontal angle": 110.0,
-                                    "Min vertical angle": 0.0,
-                                    "Max vertical angle": 0.0,
-                                    "Min range": 0.05000000074505806,
-                                    "Max range": 25.0,
-                                    "Noise Parameters": {
-                                        "Distance noise standard deviation base": 0.019999999552965164
-                                    }
+                                    "Points per layer": 921,
+                                    "Min range": 0.10000000149011612,
+                                    "Max range": 40.0
                                 }
                             }
                         }
@@ -5621,9 +5651,9 @@
                     "Parent Entity": "Entity_[6356361455011]",
                     "Transform Data": {
                         "Translate": [
-                            0.20200000703334808,
+                            0.20199990272521973,
                             0.0,
-                            -0.0040000006556510925
+                            0.0026123374700546265
                         ]
                     }
                 }
