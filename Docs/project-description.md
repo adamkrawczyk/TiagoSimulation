@@ -1,4 +1,4 @@
-# Raport: Praca nad Symulatorem TIAGo w ROS2, O3DE i integracja z TASKeR
+
 
 ---
 
@@ -6,6 +6,21 @@
 <!-- Empty line -->
 <br>
 <br>
+ POLITECHINKA WARSZAWSKA
+<!-- Empty line -->
+<br>
+<br>
+ WYDZIAŁ ELEKTRONIKI I TECHNIK INFORMACYJNYCH
+<!-- Empty line -->
+<br>
+<br>
+INSTYTUT AUTOMATYKI I INFORMATYKI STOSOWANEJ
+
+<br>
+<br>
+<br>
+<br>
+
 OPRACOWANIE RAPORTU DOTYCZĄCEGO IMPLEMENTACJI SYMULATORA DZIAŁAJĄCEGO W ros 2 DO TESTOWANIA SYSTEMU ZARZĄDZANIA ZADANIAMI ROBOTA AYSYSTUJĄCEGO
 <!-- Empty line -->
 <br>
@@ -42,6 +57,7 @@ Autor: Adam Krawczyk
 <!-- Page break after the images -->
 <div style="page-break-after: always;"></div>
 
+# Raport: Praca nad Symulatorem TIAGo w ROS2, O3DE i integracja z TASKeR
 
 ## Wstęp
 
