@@ -33,10 +33,14 @@ Autor: Adam Krawczyk
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 
 </div>
 
-<div style="display: flex; justify-content: center; align-items: center; page-break-before: always;">
+<div style="display: flex; justify-content: center; align-items: center;">
   <div>
     <img src="./Asset/logo_1.png" alt="Logo 1" style="width: 200px; height: 150px;">
   </div><div>
