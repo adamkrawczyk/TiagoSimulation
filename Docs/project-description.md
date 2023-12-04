@@ -33,10 +33,6 @@ Autor: Adam Krawczyk
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
 </div>
 
