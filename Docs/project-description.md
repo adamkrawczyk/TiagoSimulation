@@ -1,4 +1,47 @@
-# Raport: Praca nad Symulatorem TIAGo w ROS2 i O3DE
+# Raport: Praca nad Symulatorem TIAGo w ROS2, O3DE i integracja z TASKeR
+
+---
+
+<div style="text-align: center;">
+<!-- Empty line -->
+<br>
+<br>
+OPRACOWANIE RAPORTU DOTYCZĄCEGO IMPLEMENTACJI SYMULATORA DZIAŁAJĄCEGO W ros 2 DO TESTOWANIA SYSTEMU ZARZĄDZANIA ZADANIAMI ROBOTA AYSYSTUJĄCEGO
+<!-- Empty line -->
+<br>
+<br>
+Dzieło realizowane w ramach grantu badawczego przyznanego przez Centrum Badawcze POB sztuczna inteligencja i bobotyka Politechniki Warszawskiej, Projekt "Inicjatywa Doskonałości - Uczelnia Badawcza".
+<!-- Empty line -->
+<br>
+<br>
+Autor: Adam Krawczyk
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <div>
+    <img src="./Asset/logo_1.png" alt="Logo 1" style="height: 150px;">
+  </div>
+  <div>
+    <img src="./Asset/logo_2.png" alt="Logo 2" style="height: 150px;">
+  </div>
+  <div>
+    <img src="./Asset/logo_3.png" alt="Logo 3" style="height: 150px;">
+  </div>
+</div>
+
+---
+
+<!-- Page break after the images -->
+<div style="page-break-after: always;"></div>
+
 
 ## Wstęp
 
