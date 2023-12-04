@@ -40,15 +40,13 @@ Autor: Adam Krawczyk
 
 </div>
 
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: center; align-items: center; page-break-before: always;">
   <div>
-    <img src="./Asset/logo_1.png" alt="Logo 1" style="height: 150px;">
-  </div>
-  <div>
-    <img src="./Asset/logo_2.png" alt="Logo 2" style="height: 150px;">
-  </div>
-  <div>
-    <img src="./Asset/logo_3.png" alt="Logo 3" style="height: 150px;">
+    <img src="./Asset/logo_1.png" alt="Logo 1" style="width: 200px; height: 150px;">
+  </div><div>
+    <img src="./Asset/logo_2.png" alt="Logo 2" style="width: 200px; height: 150px;">
+  </div><div>
+    <img src="./Asset/logo_3.png" alt="Logo 3" style="width: 200px; height: 150px;">
   </div>
 </div>
 
