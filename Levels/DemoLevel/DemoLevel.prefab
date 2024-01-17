@@ -692,8 +692,8 @@
                 },
                 {
                     "op": "replace",
-                    "path": "/Entities/Entity_[6154497992099]/Components/EditorRigidBodyComponent/Configuration/Mass",
-                    "value": 6.93196964263916
+                    "path": "/Entities/Entity_[5995584202147]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
+                    "value": "torso_lift_link"
                 },
                 {
                     "op": "replace",
@@ -708,11 +708,6 @@
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[6528160146851]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
-                    "value": "torso_lift_link"
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[5995584202147]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
                     "value": "torso_lift_link"
                 }
             ]
