@@ -755,45 +755,7 @@
             "Components": {
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
-                    "Id": 10662893723373161537,
-                    "DisabledComponents": {
-                        "ROS2LidarSensorComponent": {
-                            "$type": "GenericComponentWrapper",
-                            "Id": 3443363042430353861,
-                            "m_template": {
-                                "$type": "ROS2LidarSensorComponent",
-                                "SensorConfiguration": {
-                                    "Frequency (HZ)": 20.0,
-                                    "Publishers": {
-                                        "sensor_msgs::msg::PointCloud2": {
-                                            "Type": "sensor_msgs::msg::PointCloud2",
-                                            "Topic": "pc"
-                                        }
-                                    }
-                                },
-                                "lidarCore": {
-                                    "lidarConfiguration": {
-                                        "lidarModelName": "Ouster OS2-64",
-                                        "lidarImplementation": "RobotecGPULidar",
-                                        "LidarParameters": {
-                                            "Name": "Ouster OS2-64",
-                                            "Layers": 64,
-                                            "Points per layer": 2048,
-                                            "Min vertical angle": 11.25,
-                                            "Max vertical angle": -11.25,
-                                            "Max range": 225.0,
-                                            "Noise Parameters": {
-                                                "Distance noise standard deviation base": 0.006000000052154064
-                                            }
-                                        },
-                                        "ExcludedEntities": [
-                                            "Entity_[6094368449955]"
-                                        ]
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    "Id": 10662893723373161537
                 },
                 "EditorEntityIconComponent": {
                     "$type": "EditorEntityIconComponent",
@@ -888,8 +850,9 @@
                         "lidarCore": {
                             "lidarConfiguration": {
                                 "lidarModelName": "Slamtec RPLIDAR S1",
-                                "lidarImplementation": "RobotecGPULidar",
+                                "lidarImplementation": "Scene Queries",
                                 "LidarParameters": {
+                                    "Name": "Slamtec RPLIDAR S1",
                                     "Points per layer": 921,
                                     "Min range": 0.10000000149011612,
                                     "Max range": 40.0
@@ -904,9 +867,9 @@
                     "Parent Entity": "Entity_[6356361455011]",
                     "Transform Data": {
                         "Translate": [
-                            0.20199990272521973,
+                            0.19618439674377441,
                             0.0,
-                            0.0026123374700546265
+                            0.0026123523712158203
                         ]
                     }
                 }
@@ -1535,7 +1498,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
-                        "Mass": 0.6931970119476318,
+                        "Mass": 6.931970119476318,
                         "Compute COM": false,
                         "Centre of mass offset": [
                             0.04360999912023544,
@@ -2451,8 +2414,7 @@
                         "Negative Limit": -360.0
                     },
                     "Motor": {
-                        "UseMotor": true,
-                        "ForceLimit": 2.0
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -2477,6 +2439,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
+                        "Mass": 8.0,
                         "Compute COM": false,
                         "Compute inertia": false,
                         "Inertia tensor": [
@@ -2529,8 +2492,7 @@
                     "Id": 14610586328601343790,
                     "m_template": {
                         "$type": "WheelControllerComponent",
-                        "SteeringEntity": "",
-                        "SteeringScale": 5.0
+                        "SteeringEntity": ""
                     }
                 }
             }
@@ -3899,7 +3861,6 @@
                     "$type": "EditorEntitySortComponent",
                     "Id": 10699816830812809330,
                     "Child Entity Order": [
-                        "Entity_[6536750081443]",
                         "Entity_[6356361455011]"
                     ]
                 },
@@ -3986,7 +3947,7 @@
                 },
                 "SkidSteeringControlComponent": {
                     "$type": "GenericComponentWrapper",
-                    "Id": 10026857151393875842,
+                    "Id": 9760211931515144858,
                     "m_template": {
                         "$type": "SkidSteeringControlComponent"
                     }
@@ -4019,12 +3980,13 @@
                                     "IsDrive": true
                                 }
                             ],
-                            "Track": 0.20999999344348907,
+                            "Track": 2.0999999046325684,
                             "Wheelbase": 0.3400000035762787
                         },
                         "DriveModel": {
                             "Limits": {
                                 "LinearLimit": 1.5,
+                                "LinearAcceleration": 2.5,
                                 "AngularAcceleration": 3.0
                             }
                         }
@@ -4170,7 +4132,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
-                        "Mass": 0.2815999984741211,
+                        "Mass": 28.159000396728516,
                         "Compute COM": false,
                         "Centre of mass offset": [
                             -0.0000010600000450722291,
@@ -5824,7 +5786,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
-                        "Mass": 14.01360034942627,
+                        "Mass": 0.1401360034942627,
                         "Compute COM": false,
                         "Centre of mass offset": [
                             0.0243500005453825,
@@ -6083,8 +6045,7 @@
                         "Negative Limit": -360.0
                     },
                     "Motor": {
-                        "UseMotor": true,
-                        "ForceLimit": 2.0
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -6109,6 +6070,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
+                        "Mass": 8.0,
                         "Compute COM": false,
                         "Compute inertia": false,
                         "Inertia tensor": [
@@ -6161,8 +6123,7 @@
                     "Id": 16384389125065039763,
                     "m_template": {
                         "$type": "WheelControllerComponent",
-                        "SteeringEntity": "",
-                        "SteeringScale": 5.0
+                        "SteeringEntity": ""
                     }
                 }
             }
@@ -6579,97 +6540,6 @@
                 }
             }
         },
-        "Entity_[6536750081443]": {
-            "Id": "Entity_[6536750081443]",
-            "Name": "rgbd_laser_link",
-            "Components": {
-                "EditorDisabledCompositionComponent": {
-                    "$type": "EditorDisabledCompositionComponent",
-                    "Id": 9462991211831722624
-                },
-                "EditorEntityIconComponent": {
-                    "$type": "EditorEntityIconComponent",
-                    "Id": 9745801077915898926
-                },
-                "EditorEntitySortComponent": {
-                    "$type": "EditorEntitySortComponent",
-                    "Id": 13839829346893478911
-                },
-                "EditorFixedJointComponent": {
-                    "$type": "EditorFixedJointComponent",
-                    "Id": 10099719120782194873,
-                    "Configuration": {
-                        "Parent Entity": "Entity_[6352066487715]",
-                        "Child Entity": "Entity_[6536750081443]"
-                    }
-                },
-                "EditorInspectorComponent": {
-                    "$type": "EditorInspectorComponent",
-                    "Id": 10620515253617474540
-                },
-                "EditorLockComponent": {
-                    "$type": "EditorLockComponent",
-                    "Id": 14972147364621682792
-                },
-                "EditorOnlyEntityComponent": {
-                    "$type": "EditorOnlyEntityComponent",
-                    "Id": 12167431010579629825
-                },
-                "EditorPendingCompositionComponent": {
-                    "$type": "EditorPendingCompositionComponent",
-                    "Id": 10773234145836442872
-                },
-                "EditorRigidBodyComponent": {
-                    "$type": "EditorRigidBodyComponent",
-                    "Id": 3301507055543877708,
-                    "Configuration": {
-                        "entityId": "",
-                        "Compute Mass": false,
-                        "Mass": 0.00009999999747378752,
-                        "Compute COM": false,
-                        "Compute inertia": false,
-                        "Inertia tensor": [
-                            0.00009999999747378752,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.00009999999747378752,
-                            0.0,
-                            0.0,
-                            0.0,
-                            0.00009999999747378752
-                        ]
-                    },
-                    "PhysXSpecificConfiguration": {
-                        "SolverPositionIterations": 40,
-                        "SolverVelocityIterations": 10
-                    }
-                },
-                "EditorVisibilityComponent": {
-                    "$type": "EditorVisibilityComponent",
-                    "Id": 15209657626977707452
-                },
-                "ROS2FrameEditorComponent": {
-                    "$type": "ROS2FrameEditorComponent",
-                    "ROS2FrameConfiguration": {
-                        "Frame Name": "rgbd_laser_link",
-                        "Joint Name": "rgbd_laser_joint"
-                    }
-                },
-                "TransformComponent": {
-                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
-                    "Id": 904280438638303643,
-                    "Parent Entity": "Entity_[6352066487715]",
-                    "Transform Data": {
-                        "Translate": [
-                            -0.8999999761581421,
-                            0.0,
-                            0.0
-                        ]
-                    }
-                }
-            }
-        },
         "Entity_[6541045048739]": {
             "Id": "Entity_[6541045048739]",
             "Name": "caster_front_right_2_link",
@@ -6744,8 +6614,7 @@
                         "Negative Limit": -360.0
                     },
                     "Motor": {
-                        "UseMotor": true,
-                        "ForceLimit": 2.0
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -6770,6 +6639,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
+                        "Mass": 8.0,
                         "Compute COM": false,
                         "Compute inertia": false,
                         "Inertia tensor": [
@@ -6822,8 +6692,7 @@
                     "Id": 17710086144110211209,
                     "m_template": {
                         "$type": "WheelControllerComponent",
-                        "SteeringEntity": "",
-                        "SteeringScale": 5.0
+                        "SteeringEntity": ""
                     }
                 }
             }
@@ -7035,8 +6904,7 @@
                         "Negative Limit": -360.0
                     },
                     "Motor": {
-                        "UseMotor": true,
-                        "ForceLimit": 2.0
+                        "UseMotor": true
                     }
                 },
                 "EditorInspectorComponent": {
@@ -7061,6 +6929,7 @@
                     "Configuration": {
                         "entityId": "",
                         "Compute Mass": false,
+                        "Mass": 8.0,
                         "Compute COM": false,
                         "Compute inertia": false,
                         "Inertia tensor": [
@@ -7113,8 +6982,7 @@
                     "Id": 1019469249793500846,
                     "m_template": {
                         "$type": "WheelControllerComponent",
-                        "SteeringEntity": "",
-                        "SteeringScale": 5.0
+                        "SteeringEntity": ""
                     }
                 }
             }

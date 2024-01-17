@@ -14,6 +14,6 @@ def generate_launch_description():
             arguments=[
                 '-d', str(pathlib.Path(__file__).parent.absolute().joinpath('config', 'footprint_filter_example.yaml'))
             ],
-            remappings=[("scan", "base_footprint/scan")]
+            # remappings=[("scan", "base_footprint/scan")]
         )
     ])

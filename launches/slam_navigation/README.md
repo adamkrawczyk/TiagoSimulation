@@ -13,7 +13,7 @@ In other cases, it can serve as a great basis to build your custom robot navigat
 To run the navigation example with your project, you need to install ROS 2 navigation stack packages.
 
 ```shell
-sudo apt install ros-${ROS_DISTRO}-slam-toolbox ros-${ROS_DISTRO}-navigation2 ros-${ROS_DISTRO}-nav2-bringup ros-${ROS_DISTRO}-pointcloud-to-laserscan
+sudo apt install ros-${ROS_DISTRO}-slam-toolbox ros-${ROS_DISTRO}-navigation2 ros-${ROS_DISTRO}-nav2-bringup ros-${ROS_DISTRO}-pointcloud-to-laserscan ros-${ROS_DISTRO}-laser-filters
 ```
 
 ### Start the simulation 
