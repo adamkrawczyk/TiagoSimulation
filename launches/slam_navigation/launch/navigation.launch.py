@@ -26,9 +26,9 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([str(pathlib.Path(__file__).parent.absolute().joinpath('slam.launch.py'))])
         ),
-        # IncludeLaunchDescription(
-        #     PythonLaunchDescriptionSource([str(pathlib.Path(__file__).parent.absolute().joinpath('footprint_laser_filter.launch.py'))])
-        # ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([str(pathlib.Path(__file__).parent.absolute().joinpath('laser_filter.launch.py'))])
+        ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([str(pathlib.Path(get_package_share_directory("nav2_bringup")).joinpath('launch', 'navigation_launch.py'))]),
             # Remap output from cmd_vel to base_footprint/cmd_vel
