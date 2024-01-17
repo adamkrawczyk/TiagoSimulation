@@ -692,11 +692,6 @@
                 },
                 {
                     "op": "replace",
-                    "path": "/Entities/Entity_[5995584202147]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
-                    "value": "torso_lift_link"
-                },
-                {
-                    "op": "replace",
                     "path": "/Entities/Entity_[6154497992099]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Namespace Configuration/Namespace",
                     "value": "torso_lift_link"
                 },
@@ -708,6 +703,11 @@
                 {
                     "op": "replace",
                     "path": "/Entities/Entity_[6528160146851]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
+                    "value": "torso_lift_link"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5995584202147]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
                     "value": "torso_lift_link"
                 }
             ]

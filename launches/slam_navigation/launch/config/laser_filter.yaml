@@ -1,0 +1,17 @@
+# scan_to_scan_filter_chain:
+#   ros__parameters:
+#     filter1:
+#       name: angular_bounds_filter
+#       type: laser_filters/LaserScanAngularBoundsFilter
+#       params:
+#         lower_angle: -1.91986  # -110 degrees in radians
+#         upper_angle: 1.91986   # 110 degrees in radians
+
+scan_to_scan_filter_chain:
+  ros__parameters:
+    filter1:
+      name: pass_through_filter
+      type: laser_filters/LaserScanPassThroughFilter
+      params:
+        lower_bound: -1.91986  # -110 degrees in radians
+        upper_bound: 1.91986   # 110 degrees in radians

@@ -29,7 +29,12 @@
             "Components": {
                 "EditorCameraComponent": {
                     "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
-                    "Id": 14729352937431435689
+                    "Id": 14729352937431435689,
+                    "Controller": {
+                        "Configuration": {
+                            "Field of View": 60.0
+                        }
+                    }
                 },
                 "EditorDisabledCompositionComponent": {
                     "$type": "EditorDisabledCompositionComponent",
@@ -74,8 +79,8 @@
                     "Id": 11503111784059831048,
                     "m_template": {
                         "$type": "FlyCameraInputComponent",
-                        "Move Speed": 3.0,
-                        "Rotation Speed": 2.0
+                        "Move Speed": 1.0,
+                        "Rotation Speed": 1.0
                     }
                 },
                 "TransformComponent": {
@@ -859,13 +864,9 @@
                         },
                         "lidarCore": {
                             "lidarConfiguration": {
-                                "lidarModelName": "Slamtec RPLIDAR S1",
                                 "lidarImplementation": "Scene Queries",
                                 "LidarParameters": {
-                                    "Name": "Slamtec RPLIDAR S1",
-                                    "Points per layer": 921,
-                                    "Min range": 0.10000000149011612,
-                                    "Max range": 40.0
+                                    "Points per layer": 921
                                 }
                             }
                         }
