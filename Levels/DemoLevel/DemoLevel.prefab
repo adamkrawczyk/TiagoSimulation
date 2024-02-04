@@ -27,7 +27,7 @@
                     "Entity_[541237100205]",
                     "Instance_[650636534085]/ContainerEntity",
                     "Entity_[1176639161715]",
-                    "Instance_[639878679008]/ContainerEntity"
+                    "Instance_[1262315185094]/ContainerEntity"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -607,15 +607,35 @@
         }
     },
     "Instances": {
-        "Instance_[639878679008]": {
+        "Instance_[1262315185094]": {
             "Source": "Assets/Importer/tiago_no_arm.urdf.prefab",
             "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../Entity_[1146574390643]"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": 3.861635684967041
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": -15.322050094604492
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": 0.06385374069213867
+                },
                 {
                     "op": "add",
                     "path": "/ContainerEntity/Components/EditorDisabledCompositionComponent",
                     "value": {
                         "$type": "EditorDisabledCompositionComponent",
-                        "Id": 3073079328573297698,
+                        "Id": 15853992334908245697,
                         "DisabledComponents": []
                     }
                 },
@@ -624,7 +644,7 @@
                     "path": "/ContainerEntity/Components/EditorEntityIconComponent",
                     "value": {
                         "$type": "EditorEntityIconComponent",
-                        "Id": 7677693559945927778,
+                        "Id": 7592705550090013720,
                         "EntityIconAssetId": {
                             "guid": "{00000000-0000-0000-0000-000000000000}",
                             "subId": 0
@@ -636,10 +656,10 @@
                     "path": "/ContainerEntity/Components/EditorEntitySortComponent",
                     "value": {
                         "$type": "EditorEntitySortComponent",
-                        "Id": 16787749114443720292,
+                        "Id": 8078816294289109347,
                         "Child Entity Order": [
-                            "Entity_[5524359802056]",
-                            "Entity_[5918274790819]"
+                            "Entity_[5918274790819]",
+                            "Entity_[5524359802056]"
                         ]
                     }
                 },
@@ -648,7 +668,7 @@
                     "path": "/ContainerEntity/Components/EditorInspectorComponent",
                     "value": {
                         "$type": "EditorInspectorComponent",
-                        "Id": 8528542920345344569,
+                        "Id": 2835007959354302265,
                         "ComponentOrderEntryArray": []
                     }
                 },
@@ -657,7 +677,7 @@
                     "path": "/ContainerEntity/Components/EditorOnlyEntityComponent",
                     "value": {
                         "$type": "EditorOnlyEntityComponent",
-                        "Id": 786613439671850991,
+                        "Id": 2439819327522219377,
                         "IsEditorOnly": false
                     }
                 },
@@ -666,29 +686,19 @@
                     "path": "/ContainerEntity/Components/EditorPendingCompositionComponent",
                     "value": {
                         "$type": "EditorPendingCompositionComponent",
-                        "Id": 1474119693713244541,
+                        "Id": 17368792300753411817,
                         "PendingComponents": []
                     }
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
-                    "value": "../Entity_[1146574390643]"
+                    "path": "/Entities/Entity_[6352066487715]/Components/EditorRigidBodyComponent/Configuration/Mass",
+                    "value": 29.999998092651367
                 },
                 {
                     "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/0",
-                    "value": 3.0056474208831787
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/1",
-                    "value": -16.338306427001953
-                },
-                {
-                    "op": "replace",
-                    "path": "/ContainerEntity/Components/TransformComponent/Transform Data/Translate/2",
-                    "value": 0.19702577590942383
+                    "path": "/Entities/Entity_[6356361455011]/Components/EditorRigidBodyComponent/Configuration/Mass",
+                    "value": 28.15900230407715
                 },
                 {
                     "op": "replace",
@@ -709,6 +719,308 @@
                     "op": "replace",
                     "path": "/Entities/Entity_[5995584202147]/Components/ROS2FrameEditorComponent/ROS2FrameConfiguration/Effective namespace",
                     "value": "torso_lift_link"
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[5524359802056]/Components/EditorEntitySortComponent/Child Entity Order/0",
+                    "value": "Entity_[468161565887]"
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[5524359802056]/Components/EditorEntitySortComponent/Child Entity Order/1",
+                    "value": "Entity_[472456533183]"
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[5524359802056]/Components/FollowingCameraComponent",
+                    "value": {
+                        "$type": "GenericComponentWrapper",
+                        "Id": 7692225233860142453,
+                        "m_template": {
+                            "$type": "FollowingCameraComponent",
+                            "Id": 0,
+                            "FollowingCameraConfiguration": {
+                                "PredefinedViews": [
+                                    "Entity_[468161565887]",
+                                    "Entity_[472456533183]"
+                                ],
+                                "SmoothingLength": 30,
+                                "ZoomSpeed": 0.05999999865889549,
+                                "RotationSpeed": 0.05000000074505806,
+                                "TranslationSpeed": 0.05000000074505806,
+                                "LockZAxis": true,
+                                "DefaultView": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -2.308370590209961
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 1.2709674835205078
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": 1.1162500381469727
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Rotate/0",
+                    "value": 11.547200202941895
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Rotate/1",
+                    "value": 19.979455947875977
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[5524359802056]/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": -120.8774185180664
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[5524359802056]/Components/EditorLookAtComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[5524359802056]/Components/FlyCameraInputComponent"
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[468161565887]",
+                    "value": {
+                        "Id": "Entity_[468161565887]",
+                        "Name": "Camera1",
+                        "Components": {
+                            "EditorCameraComponent": {
+                                "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                                "Id": 13797284997625407069,
+                                "Controller": {
+                                    "Configuration": {
+                                        "Orthographic": false,
+                                        "Orthographic Half Width": 5.0,
+                                        "Field of View": 75.0,
+                                        "Near Clip Plane Distance": 0.20000000298023224,
+                                        "Far Clip Plane Distance": 1024.0,
+                                        "SpecifyDimensions": false,
+                                        "FrustumWidth": 256.0,
+                                        "FrustumHeight": 256.0,
+                                        "MakeActiveViewOnActivation": false,
+                                        "RenderToTexture": {
+                                            "assetId": {
+                                                "guid": "{00000000-0000-0000-0000-000000000000}",
+                                                "subId": 0
+                                            },
+                                            "loadBehavior": "QueueLoad",
+                                            "assetHint": ""
+                                        },
+                                        "PipelineTemplate": "CameraPipeline"
+                                    }
+                                },
+                                "FrustumLengthPercent": 1.0,
+                                "FrustumDrawColor": [
+                                    1.0,
+                                    1.0,
+                                    0.0,
+                                    0.8999999761581421
+                                ]
+                            },
+                            "EditorDisabledCompositionComponent": {
+                                "$type": "EditorDisabledCompositionComponent",
+                                "Id": 13393242932234030589,
+                                "DisabledComponents": []
+                            },
+                            "EditorEntityIconComponent": {
+                                "$type": "EditorEntityIconComponent",
+                                "Id": 3037771485255928625,
+                                "EntityIconAssetId": {
+                                    "guid": "{00000000-0000-0000-0000-000000000000}",
+                                    "subId": 0
+                                }
+                            },
+                            "EditorEntitySortComponent": {
+                                "$type": "EditorEntitySortComponent",
+                                "Id": 12557100650988332864,
+                                "Child Entity Order": []
+                            },
+                            "EditorInspectorComponent": {
+                                "$type": "EditorInspectorComponent",
+                                "Id": 1739613081061365997,
+                                "ComponentOrderEntryArray": []
+                            },
+                            "EditorLockComponent": {
+                                "$type": "EditorLockComponent",
+                                "Id": 17196054650329507476,
+                                "Locked": false
+                            },
+                            "EditorOnlyEntityComponent": {
+                                "$type": "EditorOnlyEntityComponent",
+                                "Id": 11980549989492532374,
+                                "IsEditorOnly": false
+                            },
+                            "EditorPendingCompositionComponent": {
+                                "$type": "EditorPendingCompositionComponent",
+                                "Id": 16807167703086742868,
+                                "PendingComponents": []
+                            },
+                            "EditorVisibilityComponent": {
+                                "$type": "EditorVisibilityComponent",
+                                "Id": 6348113015781401316,
+                                "VisibilityFlag": true
+                            },
+                            "TransformComponent": {
+                                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                                "Id": 12781349274626959721,
+                                "Parent Entity": "Entity_[5524359802056]",
+                                "Transform Data": {
+                                    "Translate": [
+                                        0.9413414001464844,
+                                        0.6710953712463379,
+                                        0.8232851028442383
+                                    ],
+                                    "Rotate": [
+                                        7.844289779663086,
+                                        -8.63740348815918,
+                                        29.550479888916016
+                                    ],
+                                    "Scale": [
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "Locked": false,
+                                    "UniformScale": 1.0
+                                },
+                                "Parent Activation Transform Mode": 0,
+                                "IsStatic": false,
+                                "InterpolatePosition": 0,
+                                "InterpolateRotation": 0
+                            }
+                        },
+                        "IsRuntimeActive": true
+                    }
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[472456533183]",
+                    "value": {
+                        "Id": "Entity_[472456533183]",
+                        "Name": "Camera2",
+                        "Components": {
+                            "EditorCameraComponent": {
+                                "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                                "Id": 2226260800535883824,
+                                "Controller": {
+                                    "Configuration": {
+                                        "Orthographic": false,
+                                        "Orthographic Half Width": 5.0,
+                                        "Field of View": 75.0,
+                                        "Near Clip Plane Distance": 0.20000000298023224,
+                                        "Far Clip Plane Distance": 1024.0,
+                                        "SpecifyDimensions": false,
+                                        "FrustumWidth": 256.0,
+                                        "FrustumHeight": 256.0,
+                                        "MakeActiveViewOnActivation": false,
+                                        "RenderToTexture": {
+                                            "assetId": {
+                                                "guid": "{00000000-0000-0000-0000-000000000000}",
+                                                "subId": 0
+                                            },
+                                            "loadBehavior": "QueueLoad",
+                                            "assetHint": ""
+                                        },
+                                        "PipelineTemplate": "CameraPipeline"
+                                    }
+                                },
+                                "FrustumLengthPercent": 1.0,
+                                "FrustumDrawColor": [
+                                    1.0,
+                                    1.0,
+                                    0.0,
+                                    0.8999999761581421
+                                ]
+                            },
+                            "EditorDisabledCompositionComponent": {
+                                "$type": "EditorDisabledCompositionComponent",
+                                "Id": 1279388605256569327,
+                                "DisabledComponents": []
+                            },
+                            "EditorEntityIconComponent": {
+                                "$type": "EditorEntityIconComponent",
+                                "Id": 15098452363141998673,
+                                "EntityIconAssetId": {
+                                    "guid": "{00000000-0000-0000-0000-000000000000}",
+                                    "subId": 0
+                                }
+                            },
+                            "EditorEntitySortComponent": {
+                                "$type": "EditorEntitySortComponent",
+                                "Id": 3563514095570756979,
+                                "Child Entity Order": []
+                            },
+                            "EditorInspectorComponent": {
+                                "$type": "EditorInspectorComponent",
+                                "Id": 5665163228409102284,
+                                "ComponentOrderEntryArray": []
+                            },
+                            "EditorLockComponent": {
+                                "$type": "EditorLockComponent",
+                                "Id": 12586031858630034895,
+                                "Locked": false
+                            },
+                            "EditorOnlyEntityComponent": {
+                                "$type": "EditorOnlyEntityComponent",
+                                "Id": 15499601741927595708,
+                                "IsEditorOnly": false
+                            },
+                            "EditorPendingCompositionComponent": {
+                                "$type": "EditorPendingCompositionComponent",
+                                "Id": 5855283548390917778,
+                                "PendingComponents": []
+                            },
+                            "EditorVisibilityComponent": {
+                                "$type": "EditorVisibilityComponent",
+                                "Id": 9406097850740152845,
+                                "VisibilityFlag": true
+                            },
+                            "TransformComponent": {
+                                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                                "Id": 16750979908196550341,
+                                "Parent Entity": "Entity_[5524359802056]",
+                                "Transform Data": {
+                                    "Translate": [
+                                        -0.12279415130615234,
+                                        2.651790142059326,
+                                        1.049778938293457
+                                    ],
+                                    "Rotate": [
+                                        21.981956481933594,
+                                        0.000007257075594679918,
+                                        21.507551193237305
+                                    ],
+                                    "Scale": [
+                                        1.0,
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "Locked": false,
+                                    "UniformScale": 1.0
+                                },
+                                "Parent Activation Transform Mode": 0,
+                                "IsStatic": false,
+                                "InterpolatePosition": 0,
+                                "InterpolateRotation": 0
+                            }
+                        },
+                        "IsRuntimeActive": true
+                    }
                 }
             ]
         },
