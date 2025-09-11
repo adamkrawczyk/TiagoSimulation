@@ -16,16 +16,15 @@
     "icon_path": "preview.png",
     "engine": "o3de",
     "external_subdirectories": [
-        "/home/adam/o3de_ws/TiagoRobot",
+        "~/o3de_ws/TiagoRobot",
         "Gem"
     ],
     "restricted": "TiagoSimulation",
     "gem_names": [
-        "ROS2",
         "WarehouseSample",
         "RosRobotSample",
         "RGL",
-        "ProteusRobot"
+        "ROS2"
     ],
     "engine_version": "2.1.0"
 }

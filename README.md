@@ -5,11 +5,12 @@
 
 ### Dependencies
 
-- ROS2 Humble
+- ROS2 Humble/Jazzy
 - 16 GB of RAM
 - GPU with 2 GB of RAM and DirecX 12 or Vulkan support
 - Nvidia GeForce GTX 1060 or better
 - 50 GB of free disk space
+- O3DE 2409.2
 
 ### Building
 
@@ -22,18 +23,20 @@
 ### RECOMENDED BUILD
 
 ```bash
-sudo apt install -y git-lfs cmake clang libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev ninja-build
+sudo apt install -y git-lfs cmake clang libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev ninja-build libevdev-dev ffmpeg libavcodec-dev libxcb-randr0-dev tix
+sudo apt install ros-$ROS_DISTRO-ackermann-msgs ros-$ROS_DISTRO-gazebo-msgs ros-$ROS_DISTRO-control-msgs
 mkdir ~/o3de_ws
 cd ~/o3de_ws
-git clone https://github.com/o3de/o3de.git
-$ OPTIONAL: git checkout 4fb21b8664a54ebcfd6d3d7f036c6df7bfa7b089 # commit hash at which it was tested
+git clone https://github.com/o3de/o3de.git && cd o3de && git checkout 2409.2
 git lfs install
 git lfs pull
 ./python/get_python.sh
 cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-package
 cmake --build build/linux --target Editor --config profile -j <12>  # 12 is the number of cores to use for building
 ./scripts/o3de.sh register --this-engine
-cd ~/o3de_ws && git clone https://github.com/o3de/o3de-extras
+cd ~/o3de_ws && git clone https://github.com/o3de/o3de-extras && cd o3de-extras && git checkout 2409.2
+cd ~/o3de_ws && git clone https://github.com/RobotecAI/o3de-rgl-gem.git && cd o3de-rgl-gem && git checkout O3DE_2409
+cd ~/o3de_ws && git clone https://github.com/adamkrawczyk/TiagoRobot.git
 ```
 
 Second step is to build TiagoSimulation:
@@ -43,12 +46,16 @@ mkdir ~/projects
 cd ~/projects
 git clone https://github.com/adamkrawczyk/TiagoSimulation.git
 cd TiagoSimulation
-./o3de_ws/o3de/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
-./o3de_ws/o3de/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
-./o3de_ws/o3de/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
-./o3de_ws/o3de/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
-./o3de_ws/o3de/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
-./o3de_ws/o3de/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+export O3DE_HOME=~/o3de_ws/o3de
+export O3DE_EXTRAS_HOME=~/o3de_ws/o3de-extras
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
+${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
+${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/../o3de-rgl-gem
+
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 cmake --build build/linux --config profile --target TiagoSimulation Editor TiagoSimulation.Assets
 ./build/linux/bin/profile/Editor

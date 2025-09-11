@@ -12,7 +12,7 @@ set(ENABLED_GEMS
     ImGui
     LandscapeCanvas
     LyShine
-    PhysX
+    PhysX5
     PrimitiveAssets
     PrefabBuilder
     SaveData
@@ -23,8 +23,5 @@ set(ENABLED_GEMS
     WhiteBox
     DiffuseProbeGrid
     Compression
-    WarehouseSample
-    RosRobotSample
     ROS2
-    ImGui
 )
